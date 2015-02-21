@@ -110,6 +110,7 @@
 <html>
     <head>
         <?php include("head.php"); ?>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     </head>
     <body>
         <?php include("header.php"); ?>
@@ -131,10 +132,12 @@
                     this website does not store any data that is provided.\n";
                     echo "<a href='/'>Go back</a>";
                 ?>
+
             </section>
         </div>
 
         <?php include("footer.php");?>
+
 
     </body>
 
