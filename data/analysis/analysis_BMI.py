@@ -7,7 +7,7 @@ import sys
 from unidecode import unidecode
 
 # csv_data = read_csv(sys.argv[1])
-csv_data = read_csv("data/analysis/smoking-01050027-eng.csv")
+csv_data = read_csv("data/analysis/AdultBMI.csv")
 csv_data = csv_data.values
 results = []
 
@@ -21,13 +21,13 @@ past0 = a[0, 2]
 temp = []
 
 # with open(sys.argv[2], "w") as fh:
-with open("data/analysis/smoking-01050027-eng_san.csv", "w") as fh:
+with open("data/analysis/AdultBMI_san.csv", "w") as fh:
     for key, i in enumerate(csv_data):
         cur0 = a[key, 2]
 
         if cur0 != past0:
             # new coord in first 2
-            msg = "\"{0}\",{1},{2},{3},{4},{5}\n".format(i[0], i[1], i[2], i[3], i[4], ",".join(map(str, temp)))
+            msg = "\"{0}\",{1},{2},{3},{4},{5}\n".format(unidecode(i[0]), i[1], i[2], i[3], i[4], ",".join(map(str, temp)))
             # print msg
             fh.write(msg)
             temp = []
@@ -40,6 +40,6 @@ with open("data/analysis/smoking-01050027-eng_san.csv", "w") as fh:
             temp.append(i[-1])
         past0 = cur0
 
-    msg = "\"{0}\",{1},{2},{3},{4},{5}\n".format(i[0], i[1], i[2], i[3], i[4], ",".join(map(str, temp)))
+    msg = "\"{0}\",{1},{2},{3},{4},{5}\n".format(unidecode(i[0]), i[1], i[2], i[3], i[4], ",".join(map(str, temp)))
     # print msg
     fh.write(msg)
