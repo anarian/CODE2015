@@ -44,19 +44,20 @@
         return array ($OncePerDayResult,$OncePerMonthResult, $OncePerWeekResult, $LessThanMonthResult, $NotSpecified);
     }
 
-    function getSelfHealthData($connection, $age)
+    function getSelfHealthData($connection, $age, $gender)
     {
+        $sex = $gender == "Male" ? 'M' : 'F';
         $SelfHealthStmt = $connection->stmt_init();
         $SelfHealthStmt->prepare("SELECT ExcelPerc,VGPerc,GoodPerc,ForPPerc
                                   FROM SelfHealth
-                                  WHERE Sex ='M'
+                                  WHERE Sex = ?
                                     AND AgeRangeLow <= ?
                                     AND AgeRangeHigh >= ?
                                     AND AgeRangeHigh != 100
                                     AND Location = 'Canada'
                                     ORDER BY AgeRangeLow DESC");
 
-        $SelfHealthStmt->bind_param("ii", intval($age), intval($age));
+        $SelfHealthStmt->bind_param("sii", $sex, intval($age), intval($age));
         $SelfHealthStmt->execute();
 
         $ExcellentResult = 0;
@@ -68,9 +69,36 @@
         $SelfHealthStmt->fetch();
         $SelfHealthStmt->close();
 
-        echo $ExcellentResult . $VeryGoodResult . $GoodResult . $FairResult;
-
         return array ($ExcellentResult, $VeryGoodResult, $GoodResult, $FairResult);
+    }
+
+    function getBMIData($connection, $age, $gender)
+    {
+        $sex = $gender == "Male" ? "M" : "F";
+        $BMIStmt = $connection->stmt_init();
+        $BMIStmt->prepare("SELECT UnderPerc,NormalPerc,SomePerc,OverPerc,NotPerc
+                                  FROM AdultBMI
+                                  WHERE Sex = ?
+                                    AND AgeRangeLow <= ?
+                                    AND AgeRangeHigh >= ?
+                                    AND AgeRangeHigh != 100
+                                    AND Location = 'Canada'
+                                    ORDER BY TotalNum");
+
+        $BMIStmt->bind_param("sii", $sex, intval($age), intval($age));
+        $BMIStmt->execute();
+
+        $UnderNum = 0;
+        $NormalNum = 0;
+        $SomeNum = 0;
+        $OverNum = 0;
+        $NotNum = 0;
+
+        $BMIStmt->bind_result($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
+        $BMIStmt->fetch();
+        $BMIStmt->close();
+
+        return array ($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
     }
 
 
@@ -139,8 +167,37 @@
         }
     }
 
+    function returnBMItype($bmi) {
+        switch($bmi)
+        {
+            case $bmi < 20.0:
+                return "underweight";
+            case $bmi < 24.9:
+                return "a normal weight";
+            case $bmi < 27.0:
+                return "slightly overweight";
+            case $bmi >= 27.0:
+                return "overweight";
+        }
+    }
+
+    function getBMIPercent($bmi, $bmidata) {
+        switch($bmi)
+        {
+            case $bmi < 20.0:
+                return $bmidata[0];
+            case $bmi < 24.9:
+                return $bmidata[1];
+            case $bmi < 27.0:
+                return $bmidata[2];
+            case $bmi >= 27.0:
+                return $bmidata[3];
+        }
+    }
+
 $internet_use_data = getInternetUse($connection, $age);
-$self_health_data = getSelfHealthData($connection, $age);
+$self_health_data = getSelfHealthData($connection, $age, $gender);
+$bmi_data = getBMIData($connection, $age, $gender);
 
 ?>
 
@@ -148,6 +205,7 @@ $self_health_data = getSelfHealthData($connection, $age);
 <html>
     <head>
         <?php include("head.php"); ?>
+        <title>Results - CanLife</title>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript">
             google.load("visualization", "1", {packages:["corechart"]});
@@ -156,16 +214,28 @@ $self_health_data = getSelfHealthData($connection, $age);
             google.setOnLoadCallback(drawSelfHealthChart);
             function drawBMIChart() {
                 var data = google.visualization.arrayToDataTable([
-                    ['blah', 2],
-                    ['blah2', 5]
+                    <?php
+                        printf("
+                            ['BMI', 'Percent'],
+                            ['Underweight', %s],
+                            ['Normal weight', %s],
+                            ['Slightly overweight', %s],
+                            ['Overweight', %s]
+                        ", $bmi_data[0], $bmi_data[1], $bmi_data[2], $bmi_data[3]);
+                    ?>
                 ]);
 
                 var options = {
                     title: 'BMI Across Canada',
-                    pieHole: 0.4
+                    pieHole: 0.4,
+                    chartArea: {
+                        width: 375,
+                        height: 375,
+                        top: 25
+                    }
             };
 
-            var chart = new google.visualization.PieChart(document.getElementByID('BMIDonut'));
+            var chart = new google.visualization.PieChart(document.getElementById('BMIDonut'));
             chart.draw(data,options);
             }
 
@@ -189,8 +259,7 @@ $self_health_data = getSelfHealthData($connection, $age);
                     chartArea: {
                         width: 375,
                         height: 375,
-                        top: 30,
-                        left: 75
+                        top: 25
                     }
                 };
 
@@ -217,8 +286,7 @@ $self_health_data = getSelfHealthData($connection, $age);
                     chartArea: {
                         width: 375,
                         height: 375,
-                        top: 30,
-                        left: 75
+                        top: 25
                     }
                 };
 
@@ -236,14 +304,16 @@ $self_health_data = getSelfHealthData($connection, $age);
                 <br />
                 <p>You are a <?=$age?> year old <?=parseGender($gender)?>.</p>
                 <?php if($height != "" && $weight != "") {
+                    $bmi = returnBMI($height, $weight);
                     echo "<section class='row'>
                         <div class='col'>
                             <p>From your data, your BMI is "
-                        . number_format(returnBMI($height, $weight), 2) .
-                        ", which is //TODO: Get stat here//.</p>
+                        . number_format($bmi, 2) .
+                        ", which is " . returnBMItype($bmi) . ". " . getBMIPercent($bmi, $bmi_data) ."% of
+                        Canadians are also " . returnBMItype($bmi) . ". </p>
                         </div>
                         <div class='col'>
-                            <div id='BMIDonut' style='width:350px; height:350px;'></div>
+                            <div id='BMIDonut' style='width:400px; height:400px;'></div>
                         </div>
                     </section>";
                     }
@@ -258,11 +328,11 @@ $self_health_data = getSelfHealthData($connection, $age);
                         "% of the population.</p>
                         </div>
                         <div class='col'>
-                            <div id='SelfHealthDonut' style='width=350px; height=350px;'></div>
+                            <div id='SelfHealthDonut' style='width=400px; height=400px;'></div>
                         </div>
                     </section>";
                 }
-                    ?>
+                ?>
                 <?php if($internet_use != "") {
                     echo "
                     <section class='row'>
@@ -273,7 +343,7 @@ $self_health_data = getSelfHealthData($connection, $age);
                         "% of Canadians around your age. </p>
                         </div>
                         <div class='col'>
-                            <div id='InternetDonut' style='width:350px; height:350px;'></div>
+                            <div id='InternetDonut' style='width:400px; height:400px;'></div>
                         </div>
                     </section>";
                     }
