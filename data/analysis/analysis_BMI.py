@@ -4,6 +4,7 @@ __author__ = 'mattchan'
 from pandas import read_csv
 import numpy as np
 import sys
+from unidecode import unidecode
 
 # csv_data = read_csv(sys.argv[1])
 csv_data = read_csv("data/analysis/smoking-01050027-eng.csv")
