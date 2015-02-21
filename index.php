@@ -1,36 +1,13 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="shortcut icon" href="img/favicon.ico"> 
-	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<?php include("head.php"); ?>
 
 	<title>CanLife</title>
 
 </head>
 <body>
-
-
-	<header>
-
-		<div id="logo-container">
-			<div id="logo" style="font-family:Proxima_Thin"><a href="/">CanLife</a></div>
-			<div id="subtitle">A CODE/EDOC 2015 Project</div>
-		</div>
-<!-- 		<nav>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li> 
-				<li><a href="mailto:your@address.com" class="bordered">Contact</a></li>
-			</ul>
-		</nav> -->
-
-	</header>
+    <?php include("header.php"); ?>
 
 	<div id="content">
 
@@ -41,21 +18,20 @@
             	<form action="results.php" method="post">
                 	<tr>
                 		<td><label for="age">Age:</label></td>
-                        <td><input type="number" name="age" /></td>
+                        <td><input type="number" name="age" required/></td>
                     </tr>
                     <tr>
                     	<td><label for="gender">Gender: </label></td>
-                        <td style="width:300px"><input type="radio" name="gender" value="Male">Male
-                        <input type="radio" name="gender" value="Female">Female
-                        <input type="radio" name="gender" value="Other">Not listed</td>
+                        <td style="width:300px"><label><input type="radio" name="gender" value="Male" required>Male</label>
+                        <label><input type="radio" name="gender" value="Female">Female</label>
                     </tr>
                     <tr>
-                    	<td><label for="height">Height (m): </label></td>
-                        <td style="width:300px"><input type="number" step="any" name="height" /></td>
+                    	<td><label for="height" >Height (m): </label></td>
+                        <td style="width:300px"><input type="number" step="any" name="height"/></td>
                     </tr>
                     <tr>
                     	<td><label for="weight">Weight (kg): </label></td>
-                        <td style="width:300px"><input type="number" step="any" name="weight" /></td>
+                        <td style="width:300px"><input type="number" step="any" name="weight"/></td>
                     </tr>
                     <tr>
                     	<td><label for="self-rate">How do you feel about your current health?</label></td>
@@ -128,27 +104,7 @@
  
 	</div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script>
-	if (!window.jQuery) 
-	{
-	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
-	}
-	</script>
-
-	<script src="js/vendor/jquery.fluidbox.min.js"></script>
-	<script src="js/main.js"></script>
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+    <?php include("footer.php");?>
 
 </body>
 </html>
