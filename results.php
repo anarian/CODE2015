@@ -11,9 +11,6 @@
 	$self_rate = $_POST["self-rate"];
 	$internet_use = $_POST["internet-use"];
 
-    $internet_use_result = 0.0;
-
-
 	$connection = new mysqli($servername, $username, $password, $dbname);
 
     if($connection->connect_error) {
@@ -47,6 +44,35 @@
         return array ($OncePerDayResult,$OncePerMonthResult, $OncePerWeekResult, $LessThanMonthResult, $NotSpecified);
     }
 
+    function getSelfHealthData($connection, $age)
+    {
+        $SelfHealthStmt = $connection->stmt_init();
+        $SelfHealthStmt->prepare("SELECT ExcelPerc,VGPerc,GoodPerc,ForPPerc
+                                  FROM SelfHealth
+                                  WHERE Sex ='M'
+                                    AND AgeRangeLow <= ?
+                                    AND AgeRangeHigh >= ?
+                                    AND AgeRangeHigh != 100
+                                    AND Location = 'Canada'
+                                    ORDER BY AgeRangeLow DESC");
+
+        $SelfHealthStmt->bind_param("ii", intval($age), intval($age));
+        $SelfHealthStmt->execute();
+
+        $ExcellentResult = 0;
+        $VeryGoodResult = 0;
+        $GoodResult = 0;
+        $FairResult = 0;
+
+        $SelfHealthStmt->bind_result($ExcellentResult, $VeryGoodResult, $GoodResult, $FairResult);
+        $SelfHealthStmt->fetch();
+        $SelfHealthStmt->close();
+
+        echo $ExcellentResult . $VeryGoodResult . $GoodResult . $FairResult;
+
+        return array ($ExcellentResult, $VeryGoodResult, $GoodResult, $FairResult);
+    }
+
 
     function getInternetUseValue($internet_use, $data)
     {
@@ -60,6 +86,21 @@
             case "once-per-month":
                 return $data[2];
             case "less-per-month":
+                return $data[3];
+        }
+    }
+
+    function getSelfHealthValue($self_rate, $data)
+    {
+        switch($self_rate)
+        {
+            case "Excellent":
+                return $data[0];
+            case "VGood":
+                return $data[1];
+            case "Good":
+                return $data[2];
+            case "PoorFair":
                 return $data[3];
         }
     }
@@ -99,6 +140,7 @@
     }
 
 $internet_use_data = getInternetUse($connection, $age);
+$self_health_data = getSelfHealthData($connection, $age);
 
 ?>
 
@@ -111,6 +153,7 @@ $internet_use_data = getInternetUse($connection, $age);
             google.load("visualization", "1", {packages:["corechart"]});
             google.setOnLoadCallback(drawInternetChart);
             google.setOnLoadCallback(drawBMIChart);
+            google.setOnLoadCallback(drawSelfHealthChart);
             function drawBMIChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['blah', 2],
@@ -155,6 +198,34 @@ $internet_use_data = getInternetUse($connection, $age);
                 chart.draw(data,options);
             }
 
+            function drawSelfHealthChart() {
+                var data = google.visualization.arrayToDataTable([
+                    <?php
+                        printf("
+                            ['Rating', 'Percent'],
+                            ['Excellent', %s],
+                            ['Very Good', %s],
+                            ['Good', %s],
+                            ['Fair or Poor', %s],
+                        ", $self_health_data[0], $self_health_data[1], $self_health_data[2], $self_health_data[3]);
+                     ?>
+                ]);
+
+                var options = {
+                    title: 'Self-Rated Health Across Canada',
+                    pieHole: 0.4,
+                    chartArea: {
+                        width: 375,
+                        height: 375,
+                        top: 30,
+                        left: 75
+                    }
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('SelfHealthDonut'));
+                chart.draw(data,options);
+            }
+
         </script>
     </head>
     <body>
@@ -164,21 +235,34 @@ $internet_use_data = getInternetUse($connection, $age);
             <section class="intro">
                 <br />
                 <p>You are a <?=$age?> year old <?=parseGender($gender)?>.</p>
-                <?php if($height != "" && $weight != "")
-                    echo "
-                    <section class='row'>
+                <?php if($height != "" && $weight != "") {
+                    echo "<section class='row'>
                         <div class='col'>
                             <p>From your data, your BMI is "
-                            . number_format(returnBMI($height, $weight),2) .
-                            ", which is //TODO: Get stat here//.</p>
+                        . number_format(returnBMI($height, $weight), 2) .
+                        ", which is //TODO: Get stat here//.</p>
                         </div>
                         <div class='col'>
                             <div id='BMIDonut' style='width:350px; height:350px;'></div>
                         </div>
                     </section>";
+                    }
                 ?>
-                <?php if($self_rate != "") echo "<p>You rated your health as being " .
-                    getSelfHealth($self_rate) . ". This is the same as //TODO: Get stat here//.</p>" ?>
+                <?php if($self_rate != "") {
+                    echo "
+                    <section class='row'>
+                        <div class='col'>
+                            <p>You rated your health as being " .
+                        getSelfHealth($self_rate) .
+                        ". This is the same as " . getSelfHealthValue($self_rate, $self_health_data) .
+                        "% of the population.</p>
+                        </div>
+                        <div class='col'>
+                            <div id='SelfHealthDonut' style='width=350px; height=350px;'></div>
+                        </div>
+                    </section>";
+                }
+                    ?>
                 <?php if($internet_use != "") {
                     echo "
                     <section class='row'>

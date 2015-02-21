@@ -18,3 +18,5 @@
 [21-Feb-2015 10:29:29 America/New_York] PHP Catchable fatal error:  Object of class mysqli_stmt could not be converted to string in /home/jonabnbb/public_html/code/results.php on line 44
 [21-Feb-2015 14:23:31 America/New_York] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/jonabnbb/public_html/code/results.php on line 122
 [21-Feb-2015 14:24:55 America/New_York] PHP Fatal error:  Call to a member function bind_result() on a non-object in /home/jonabnbb/public_html/code/results.php on line 152
+[21-Feb-2015 14:41:15 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/jonabnbb/public_html/code/results.php on line 56
+[21-Feb-2015 15:28:17 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/jonabnbb/public_html/code/results.php on line 261
