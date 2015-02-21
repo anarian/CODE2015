@@ -10,6 +10,7 @@
 	$weight = $_POST["weight"];
 	$self_rate = $_POST["self-rate"];
 	$internet_use = $_POST["internet-use"];
+    $smoking = $_POST["smoking"];
 
 	$connection = new mysqli($servername, $username, $password, $dbname);
 
@@ -99,6 +100,35 @@
         $BMIStmt->close();
 
         return array ($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
+    }
+
+    function getSmokeData($connection, $age, $gender)
+    {
+        $sex = $gender == "Male" ? "M" : "F";
+        $BMIStmt = $connection->stmt_init();
+        $BMIStmt->prepare("SELECT DailyPerc,OccPerc,FormerPerc,NeverPerc,NotPerc
+                                      FROM Smoking
+                                      WHERE Sex = ?
+                                        AND AgeRangeLow <= ?
+                                        AND AgeRangeHigh >= ?
+                                        AND AgeRangeHigh != 100
+                                        AND Location = 'Canada'
+                                        ORDER BY TotalNum");
+
+        $BMIStmt->bind_param("sii", $sex, intval($age), intval($age));
+        $BMIStmt->execute();
+
+        $UnderNum = 0;
+        $DailyNum = 0;
+        $OccasionalNum = 0;
+        $NeverNum = 0;
+        $NotNum = 0;
+
+        $BMIStmt->bind_result($UnderNum, $DailyNum, $OccasionalNum, $NeverNum, $NotNum);
+        $BMIStmt->fetch();
+        $BMIStmt->close();
+
+        return array ($UnderNum, $DailyNum, $OccasionalNum, $NeverNum, $NotNum);
     }
 
 
@@ -195,9 +225,36 @@
         }
     }
 
+    function getSmokeText($smoke) {
+        switch($smoke) {
+            case "never" :
+                return "have never smoked";
+            case "former":
+                return "used to smoke";
+            case "occasional":
+                return "occasionally smoke";
+            case "daily":
+                return "smoke everyday";
+        }
+    }
+
+    function getSmokePercent($smoke, $smoke_data) {
+        switch($smoke) {
+            case "never" :
+                return $smoke_data[0];
+            case "former":
+                return $smoke_data[1];
+            case "occasional":
+                return $smoke_data[2];
+            case "daily":
+                return $smoke_data[3];
+        }
+    }
+
 $internet_use_data = getInternetUse($connection, $age);
 $self_health_data = getSelfHealthData($connection, $age, $gender);
 $bmi_data = getBMIData($connection, $age, $gender);
+$smoke_data = getSmokeData($connection, $age, $gender);
 
 ?>
 
@@ -212,6 +269,7 @@ $bmi_data = getBMIData($connection, $age, $gender);
             google.setOnLoadCallback(drawInternetChart);
             google.setOnLoadCallback(drawBMIChart);
             google.setOnLoadCallback(drawSelfHealthChart);
+            google.setOnLoadCallback(drawSmokeChart);
             function drawBMIChart() {
                 var data = google.visualization.arrayToDataTable([
                     <?php
@@ -220,8 +278,9 @@ $bmi_data = getBMIData($connection, $age, $gender);
                             ['Underweight', %s],
                             ['Normal weight', %s],
                             ['Slightly overweight', %s],
-                            ['Overweight', %s]
-                        ", $bmi_data[0], $bmi_data[1], $bmi_data[2], $bmi_data[3]);
+                            ['Overweight', %s],
+                            ['Not specified', %s]
+                        ", $bmi_data[0], $bmi_data[1], $bmi_data[2], $bmi_data[3], $bmi_data[4]);
                     ?>
                 ]);
 
@@ -294,7 +353,44 @@ $bmi_data = getBMIData($connection, $age, $gender);
                 chart.draw(data,options);
             }
 
+            function drawSmokeChart() {
+                var data = google.visualization.arrayToDataTable([
+                    <?php
+                        printf("
+                            ['Frequency', 'Percent'],
+                            ['Never', %s],
+                            ['Former', %s],
+                            ['Occasional', %s],
+                            ['Everyday', %s],
+                            ['Not Specified', %s]
+                        ", $smoke_data[0], $smoke_data[1], $smoke_data[2], $smoke_data[3], $smoke_data[4]);
+                     ?>
+                ]);
+
+                var options = {
+                    title: 'Smoking Statistics Across Canada',
+                    pieHole: 0.4,
+                    chartArea: {
+                        width: 375,
+                        height: 375,
+                        top: 25
+                    }
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('SmokeDonut'));
+                chart.draw(data,options);
+            }
+
         </script>
+        <!--<script type="text/javascript">
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            }
+
+        </script>-->
     </head>
     <body>
         <?php include("header.php"); ?>
@@ -305,7 +401,8 @@ $bmi_data = getBMIData($connection, $age, $gender);
                 <p>You are a <?=$age?> year old <?=parseGender($gender)?>.</p>
                 <?php if($height != "" && $weight != "") {
                     $bmi = returnBMI($height, $weight);
-                    echo "<section class='row'>
+                    echo "<h3>Body Mass Index</h3>
+                    <section class='row'>
                         <div class='col'>
                             <p>From your data, your BMI is "
                         . number_format($bmi, 2) .
@@ -313,13 +410,13 @@ $bmi_data = getBMIData($connection, $age, $gender);
                         Canadians are also " . returnBMItype($bmi) . ". </p>
                         </div>
                         <div class='col'>
-                            <div id='BMIDonut' style='width:400px; height:400px;'></div>
+                            <div id='BMIDonut' style='width:400px; height:350px;'></div>
                         </div>
                     </section>";
                     }
                 ?>
                 <?php if($self_rate != "") {
-                    echo "
+                    echo "<h3>Self-Rated Health</h3>
                     <section class='row'>
                         <div class='col'>
                             <p>You rated your health as being " .
@@ -328,13 +425,13 @@ $bmi_data = getBMIData($connection, $age, $gender);
                         "% of the population.</p>
                         </div>
                         <div class='col'>
-                            <div id='SelfHealthDonut' style='width=400px; height=400px;'></div>
+                            <div id='SelfHealthDonut' style='width=400px; height=350px;'></div>
                         </div>
                     </section>";
                 }
                 ?>
                 <?php if($internet_use != "") {
-                    echo "
+                    echo "<h3>Internet Use</h3>
                     <section class='row'>
                         <div class='col'>
                             <p>Your internet use is " .
@@ -343,10 +440,25 @@ $bmi_data = getBMIData($connection, $age, $gender);
                         "% of Canadians around your age. </p>
                         </div>
                         <div class='col'>
-                            <div id='InternetDonut' style='width:400px; height:400px;'></div>
+                            <div id='InternetDonut' style='width:400px; height:350px;'></div>
                         </div>
                     </section>";
                     }
+                ?>
+                <?php if($smoking != "") {
+                    echo "<h3>Smoking</h3>
+                    <section class='row'>
+                        <div class='col'>
+                            <p>You " . getSmokeText($smoking) . ". "
+                        . getSmokePercent($smoking, $smoke_data) .
+                    "% of other Canadians also " . getSmokeText($smoking) . "</p>
+                        </div>
+                        <div class='col'>
+                            <div id='SmokeDonut' style='width:400px; height:350px;'></div>
+                        </div>
+                    </section>
+                    ";
+                }
                 ?>
                 <?php if($height == "" && $self_rate == "" && $weight == "" && $internet_use == "")
                     echo "You haven't provided any other information. If you're concerned about your data privacy,

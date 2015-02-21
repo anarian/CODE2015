@@ -20,3 +20,6 @@
 [21-Feb-2015 14:24:55 America/New_York] PHP Fatal error:  Call to a member function bind_result() on a non-object in /home/jonabnbb/public_html/code/results.php on line 152
 [21-Feb-2015 14:41:15 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/jonabnbb/public_html/code/results.php on line 56
 [21-Feb-2015 15:28:17 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/jonabnbb/public_html/code/results.php on line 261
+[21-Feb-2015 18:31:47 America/New_York] PHP Fatal error:  Class 'BingAds\Proxy\ClientProxy' not found in /home/jonabnbb/public_html/code/results.php on line 247
+[21-Feb-2015 18:49:37 America/New_York] PHP Parse error:  syntax error, unexpected '%', expecting ')' in /home/jonabnbb/public_html/code/results.php on line 452
+[21-Feb-2015 18:50:19 America/New_York] PHP Parse error:  syntax error, unexpected '%', expecting ')' in /home/jonabnbb/public_html/code/results.php on line 452

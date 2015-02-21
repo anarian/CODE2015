@@ -287,7 +287,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "font-family: " Helvetica Neue ",Helvetica,Arial,sans-serif";
+  font-family: Proxima;
   line-height: 1.25;
   margin: 0;
   color: #111;
@@ -582,7 +582,7 @@ header nav ul li a.bordered {
   margin-left: auto;
   margin-right: auto;
   padding-top: 2em;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
 }
 #content section.row:after {
   content: "";

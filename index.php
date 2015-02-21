@@ -31,7 +31,7 @@
                             <label for="weight">Weight (kg): </label>
                             <input type="number" step="any" name="weight"/>
                         </div>
-                    </section
+                    </section>
                     <section class="row">
                         <div class="col-full">
                             <label for="self-rate">How do you feel about your current health?<br /></label>
@@ -40,7 +40,7 @@
                             <label><input type="radio" name="self-rate" value="VGood">&nbsp;Very Good</label>
                             <label><input type="radio" name="self-rate" value="Excellent">&nbsp;Excellent</label>
                         </div>
-                    </section
+                    </section>
                     <section class="row">
                         <div class="col-full">
                             <label for="internet-use">How often do you use the internet?</label>
@@ -49,7 +49,16 @@
                             <label><input type="radio" name="internet-use" value="once-per-month">&nbsp;At least once per month</label>
                             <label><input type="radio" name="internet-use" value="less-per-month">&nbsp;Less than once per month</label>
                         </div>
-                    </section
+                    </section>
+                    <section class="row">
+                        <div class="col-full">
+                            <label for="smoking">How often do you smoke?</label>
+                            <label><input type="radio" name="smoking" value="never">&nbsp;Never</label>
+                            <label><input type="radio" name="smoking" value="former">&nbsp;Former</label>
+                            <label><input type="radio" name="smoking" value="occasional">&nbsp;Occasional</label>
+                            <label><input type="radio" name="smoking" value="daily = ">&nbsp;Daily</label>
+                        </div>
+                    </section>
                     <section class="row">
                         <div class="col-full"><input type="submit" /></div>
                     </section
