@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<title>Gumba Template</title>
+	<title>CanLife</title>
 
 </head>
 <body>
@@ -36,8 +36,8 @@
 
 		<section class="intro">
         	<br />
-			<h2>Compare you health to the rest of Canada</h2>
-            <table cellpadding="1">
+			<h2 style="font-family:Proxima">Compare your health to the rest of Canada</h2>
+            <table id="form">
             	<form action="results.php" method="post">
                 	<tr>
                 		<td><label for="age">Age:</label></td>
@@ -45,35 +45,37 @@
                     </tr>
                     <tr>
                     	<td><label for="gender">Gender: </label></td>
-                        <td><input type="radio" name="gender" value="Male">Male
+                        <td style="width:300px"><input type="radio" name="gender" value="Male">Male
                         <input type="radio" name="gender" value="Female">Female
                         <input type="radio" name="gender" value="Other">Not listed</td>
                     </tr>
                     <tr>
                     	<td><label for="height">Height (m): </label></td>
-                        <td><input type="number" name="height" /></td>
+                        <td style="width:300px"><input type="number" name="height" /></td>
                     </tr>
                     <tr>
                     	<td><label for="weight">Weight (kg): </label></td>
-                        <td><input type="number" name="weight" /></td>
+                        <td style="width:300px"><input type="number" name="weight" /></td>
                     </tr>
                     <tr>
                     	<td><label for="self-rate">How do you feel about your current health?</label></td>
                     </tr>
                     <tr>
-                    	<td><input type="radio" name="self-rate" value="PoorFair">Poor or Fair
-                        <input type="radio" name="self-rate" value="Good">Good
-                        <input type="radio" name="self-rate" value="VGood">Very Good
-                        <input type="radio" name="self-rate" value="Excellent">Excellent</td>
+                    	<td><label><input type="radio" name="self-rate" value="PoorFair">&nbsp;Poor or Fair</label>
+                        <label><input type="radio" name="self-rate" value="Good">&nbsp;Good</label>
+                        <label><input type="radio" name="self-rate" value="VGood">&nbsp;Very Good</label>
+                        <label><input type="radio" name="self-rate" value="Excellent">&nbsp;Excellent</label></td>
+                        <td style="width:0;"></td>
                     </tr>
                     <tr>
                     	<td><label for"internet-use">How often do you use the internet?</label></td>
                     </tr>
                     <tr>
-						<td><input type="radio" name="internet-use" value="once-per-day">At least once per day
-                        <input type="radio" name="internet-use" value="once-per-week">At least once per week
-                        <input type="radio" name="internet-use" value="once-per-month">At least once per month
-                        <input type="radio" name="internet-use" value="less-per-month">Less than once per month</td>
+						<td><label><input type="radio" name="internet-use" value="once-per-day">&nbsp;At least once per day</label>
+                        <label><input type="radio" name="internet-use" value="once-per-week">&nbsp;At least once per week</label>
+                        <label><input type="radio" name="internet-use" value="once-per-month">&nbsp;At least once per month</label>
+                        <label><input type="radio" name="internet-use" value="less-per-month">&nbsp;Less than once per month</label></td>
+                        <td style="width:0;"></td>
                     </tr>
                     <tr>
                         <td><input type="submit" /></td>
