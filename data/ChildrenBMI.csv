@@ -1,0 +1,469 @@
+Ref_Date,GEO,VAR,SEX,AGE,STATS,CHAR,Vector,Coordinate,Value
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,Estimate,v88847602,1.1.1.1.1.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,Estimate,v88847602,1.1.1.1.1.1,4.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,Estimate,v88847602,1.1.1.1.1.1,5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847603,1.1.1.1.1.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847603,1.1.1.1.1.2,2.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847603,1.1.1.1.1.2,3.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847604,1.1.1.1.1.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847604,1.1.1.1.1.3,7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847604,1.1.1.1.1.3,7.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,Estimate,v88847605,1.1.1.1.2.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,Estimate,v88847605,1.1.1.1.2.1,68.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,Estimate,v88847605,1.1.1.1.2.1,69.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847606,1.1.1.1.2.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847606,1.1.1.1.2.2,64.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847606,1.1.1.1.2.2,65.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847607,1.1.1.1.2.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847607,1.1.1.1.2.3,72.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847607,1.1.1.1.2.3,72.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,Estimate,v88847608,1.1.1.1.3.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,Estimate,v88847608,1.1.1.1.3.1,14.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,Estimate,v88847608,1.1.1.1.3.1,13.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847609,1.1.1.1.3.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847609,1.1.1.1.3.2,12.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847609,1.1.1.1.3.2,11.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847610,1.1.1.1.3.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847610,1.1.1.1.3.3,17.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847610,1.1.1.1.3.3,16.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,Estimate,v88847611,1.1.1.1.4.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,Estimate,v88847611,1.1.1.1.4.1,12
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,Estimate,v88847611,1.1.1.1.4.1,12
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847612,1.1.1.1.4.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847612,1.1.1.1.4.2,10.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847612,1.1.1.1.4.2,9.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847613,1.1.1.1.4.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847613,1.1.1.1.4.3,14.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847613,1.1.1.1.4.3,14.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,Estimate,v88847614,1.1.1.2.1.1,3.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,Estimate,v88847614,1.1.1.2.1.1,5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,Estimate,v88847614,1.1.1.2.1.1,4.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847615,1.1.1.2.1.2,2.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847615,1.1.1.2.1.2,3.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847615,1.1.1.2.1.2,3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847616,1.1.1.2.1.3,5.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847616,1.1.1.2.1.3,7.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847616,1.1.1.2.1.3,7.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,Estimate,v88847617,1.1.1.2.2.1,69.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,Estimate,v88847617,1.1.1.2.2.1,69.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,Estimate,v88847617,1.1.1.2.2.1,69.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847618,1.1.1.2.2.2,65
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847618,1.1.1.2.2.2,64.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847618,1.1.1.2.2.2,65.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847619,1.1.1.2.2.3,74.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847619,1.1.1.2.2.3,73.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847619,1.1.1.2.2.3,73.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,Estimate,v88847620,1.1.1.2.3.1,13.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,Estimate,v88847620,1.1.1.2.3.1,14.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,Estimate,v88847620,1.1.1.2.3.1,13
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847621,1.1.1.2.3.2,10.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847621,1.1.1.2.3.2,11.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847621,1.1.1.2.3.2,10
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847622,1.1.1.2.3.3,15.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847622,1.1.1.2.3.3,17.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847622,1.1.1.2.3.3,16.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,Estimate,v88847623,1.1.1.2.4.1,13.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,Estimate,v88847623,1.1.1.2.4.1,11.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,Estimate,v88847623,1.1.1.2.4.1,12.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847624,1.1.1.2.4.2,10.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847624,1.1.1.2.4.2,9.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847624,1.1.1.2.4.2,9.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847625,1.1.1.2.4.3,16.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847625,1.1.1.2.4.3,13.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847625,1.1.1.2.4.3,16.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,Estimate,v88847626,1.1.1.3.1.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,Estimate,v88847626,1.1.1.3.1.1,2.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,Estimate,v88847626,1.1.1.3.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"Low 95% confidence interval, estimate",v88847627,1.1.1.3.1.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"Low 95% confidence interval, estimate",v88847627,1.1.1.3.1.2,1.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"Low 95% confidence interval, estimate",v88847627,1.1.1.3.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"High 95% confidence interval, estimate",v88847628,1.1.1.3.1.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"High 95% confidence interval, estimate",v88847628,1.1.1.3.1.3,4.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Underweight,"High 95% confidence interval, estimate",v88847628,1.1.1.3.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,Estimate,v88847629,1.1.1.3.2.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,Estimate,v88847629,1.1.1.3.2.1,65.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,Estimate,v88847629,1.1.1.3.2.1,67.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"Low 95% confidence interval, estimate",v88847630,1.1.1.3.2.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"Low 95% confidence interval, estimate",v88847630,1.1.1.3.2.2,60.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"Low 95% confidence interval, estimate",v88847630,1.1.1.3.2.2,58.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"High 95% confidence interval, estimate",v88847631,1.1.1.3.2.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"High 95% confidence interval, estimate",v88847631,1.1.1.3.2.3,70.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Normal weight,"High 95% confidence interval, estimate",v88847631,1.1.1.3.2.3,75.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,Estimate,v88847632,1.1.1.3.3.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,Estimate,v88847632,1.1.1.3.3.1,17.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,Estimate,v88847632,1.1.1.3.3.1,17.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"Low 95% confidence interval, estimate",v88847633,1.1.1.3.3.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"Low 95% confidence interval, estimate",v88847633,1.1.1.3.3.2,11.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"Low 95% confidence interval, estimate",v88847633,1.1.1.3.3.2,11.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"High 95% confidence interval, estimate",v88847634,1.1.1.3.3.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"High 95% confidence interval, estimate",v88847634,1.1.1.3.3.3,24.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Overweight,"High 95% confidence interval, estimate",v88847634,1.1.1.3.3.3,25.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,Estimate,v88847635,1.1.1.3.4.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,Estimate,v88847635,1.1.1.3.4.1,14.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,Estimate,v88847635,1.1.1.3.4.1,9.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"Low 95% confidence interval, estimate",v88847636,1.1.1.3.4.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"Low 95% confidence interval, estimate",v88847636,1.1.1.3.4.2,9.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"Low 95% confidence interval, estimate",v88847636,1.1.1.3.4.2,6.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"High 95% confidence interval, estimate",v88847637,1.1.1.3.4.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"High 95% confidence interval, estimate",v88847637,1.1.1.3.4.3,21
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 3 to 5,Obese,"High 95% confidence interval, estimate",v88847637,1.1.1.3.4.3,13.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,Estimate,v88847638,1.1.1.4.1.1,3.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,Estimate,v88847638,1.1.1.4.1.1,4.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,Estimate,v88847638,1.1.1.4.1.1,4.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847639,1.1.1.4.1.2,1.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847639,1.1.1.4.1.2,2.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847639,1.1.1.4.1.2,3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847640,1.1.1.4.1.3,7.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847640,1.1.1.4.1.3,8.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847640,1.1.1.4.1.3,7.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,Estimate,v88847641,1.1.1.4.2.1,70.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,Estimate,v88847641,1.1.1.4.2.1,70.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,Estimate,v88847641,1.1.1.4.2.1,75
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847642,1.1.1.4.2.2,67.2
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847642,1.1.1.4.2.2,64.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847642,1.1.1.4.2.2,69.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847643,1.1.1.4.2.3,73.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847643,1.1.1.4.2.3,75.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847643,1.1.1.4.2.3,80
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,Estimate,v88847644,1.1.1.4.3.1,13.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,Estimate,v88847644,1.1.1.4.3.1,12.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,Estimate,v88847644,1.1.1.4.3.1,11.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847645,1.1.1.4.3.2,10.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847645,1.1.1.4.3.2,10
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847645,1.1.1.4.3.2,7.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847646,1.1.1.4.3.3,18.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847646,1.1.1.4.3.3,15.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847646,1.1.1.4.3.3,16.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,Estimate,v88847647,1.1.1.4.4.1,11.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,Estimate,v88847647,1.1.1.4.4.1,12.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,Estimate,v88847647,1.1.1.4.4.1,8.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847648,1.1.1.4.4.2,9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847648,1.1.1.4.4.2,9.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847648,1.1.1.4.4.2,6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847649,1.1.1.4.4.3,15
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847649,1.1.1.4.4.3,16.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847649,1.1.1.4.4.3,12.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,Estimate,v88847650,1.1.1.5.1.1,3.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,Estimate,v88847650,1.1.1.5.1.1,5.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,Estimate,v88847650,1.1.1.5.1.1,4.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847651,1.1.1.5.1.2,1.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847651,1.1.1.5.1.2,3.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847651,1.1.1.5.1.2,2.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847652,1.1.1.5.1.3,6.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847652,1.1.1.5.1.3,9.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847652,1.1.1.5.1.3,8.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,Estimate,v88847653,1.1.1.5.2.1,69.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,Estimate,v88847653,1.1.1.5.2.1,68.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,Estimate,v88847653,1.1.1.5.2.1,64.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847654,1.1.1.5.2.2,61.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847654,1.1.1.5.2.2,60.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847654,1.1.1.5.2.2,56.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847655,1.1.1.5.2.3,76.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847655,1.1.1.5.2.3,75.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847655,1.1.1.5.2.3,71.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,Estimate,v88847656,1.1.1.5.3.1,12.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,Estimate,v88847656,1.1.1.5.3.1,15.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,Estimate,v88847656,1.1.1.5.3.1,14.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847657,1.1.1.5.3.2,9.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847657,1.1.1.5.3.2,11.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847657,1.1.1.5.3.2,10.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847658,1.1.1.5.3.3,15.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847658,1.1.1.5.3.3,21.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847658,1.1.1.5.3.3,19.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,Estimate,v88847659,1.1.1.5.4.1,14.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,Estimate,v88847659,1.1.1.5.4.1,10.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,Estimate,v88847659,1.1.1.5.4.1,16.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847660,1.1.1.5.4.2,9.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847660,1.1.1.5.4.2,7.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847660,1.1.1.5.4.2,11.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847661,1.1.1.5.4.3,22.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847661,1.1.1.5.4.3,14
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Both sexes,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847661,1.1.1.5.4.3,23
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,Estimate,v88847662,1.1.2.1.1.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,Estimate,v88847662,1.1.2.1.1.1,5.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,Estimate,v88847662,1.1.2.1.1.1,4.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847663,1.1.2.1.1.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847663,1.1.2.1.1.2,3.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847663,1.1.2.1.1.2,2.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847664,1.1.2.1.1.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847664,1.1.2.1.1.3,9.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847664,1.1.2.1.1.3,8.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,Estimate,v88847665,1.1.2.1.2.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,Estimate,v88847665,1.1.2.1.2.1,66.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,Estimate,v88847665,1.1.2.1.2.1,68
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847666,1.1.2.1.2.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847666,1.1.2.1.2.2,61.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847666,1.1.2.1.2.2,64
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847667,1.1.2.1.2.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847667,1.1.2.1.2.3,71.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847667,1.1.2.1.2.3,71.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,Estimate,v88847668,1.1.2.1.3.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,Estimate,v88847668,1.1.2.1.3.1,12.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,Estimate,v88847668,1.1.2.1.3.1,13
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847669,1.1.2.1.3.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847669,1.1.2.1.3.2,9.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847669,1.1.2.1.3.2,10
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847670,1.1.2.1.3.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847670,1.1.2.1.3.3,16.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847670,1.1.2.1.3.3,16.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,Estimate,v88847671,1.1.2.1.4.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,Estimate,v88847671,1.1.2.1.4.1,14.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,Estimate,v88847671,1.1.2.1.4.1,14.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847672,1.1.2.1.4.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847672,1.1.2.1.4.2,11.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847672,1.1.2.1.4.2,10.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847673,1.1.2.1.4.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847673,1.1.2.1.4.3,18.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847673,1.1.2.1.4.3,19.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,Estimate,v88847674,1.1.2.2.1.1,3.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,Estimate,v88847674,1.1.2.2.1.1,6.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,Estimate,v88847674,1.1.2.2.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847675,1.1.2.2.1.2,2.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847675,1.1.2.2.1.2,3.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847675,1.1.2.2.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847676,1.1.2.2.1.3,5.2
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847676,1.1.2.2.1.3,10.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847676,1.1.2.2.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,Estimate,v88847677,1.1.2.2.2.1,67.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,Estimate,v88847677,1.1.2.2.2.1,67.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,Estimate,v88847677,1.1.2.2.2.1,67.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847678,1.1.2.2.2.2,63
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847678,1.1.2.2.2.2,61.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847678,1.1.2.2.2.2,62.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847679,1.1.2.2.2.3,71.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847679,1.1.2.2.2.3,72
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847679,1.1.2.2.2.3,73.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,Estimate,v88847680,1.1.2.2.3.1,13.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,Estimate,v88847680,1.1.2.2.3.1,12.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,Estimate,v88847680,1.1.2.2.3.1,13.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847681,1.1.2.2.3.2,11
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847681,1.1.2.2.3.2,9.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847681,1.1.2.2.3.2,9.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847682,1.1.2.2.3.3,16.2
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847682,1.1.2.2.3.3,16.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847682,1.1.2.2.3.3,17.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,Estimate,v88847683,1.1.2.2.4.1,15.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,Estimate,v88847683,1.1.2.2.4.1,14.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,Estimate,v88847683,1.1.2.2.4.1,15
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847684,1.1.2.2.4.2,12.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847684,1.1.2.2.4.2,11.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847684,1.1.2.2.4.2,10.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847685,1.1.2.2.4.3,19.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847685,1.1.2.2.4.3,17.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847685,1.1.2.2.4.3,21.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,Estimate,v88847698,1.1.2.4.1.1,3.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,Estimate,v88847698,1.1.2.4.1.1,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,Estimate,v88847698,1.1.2.4.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847699,1.1.2.4.1.2,1.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847699,1.1.2.4.1.2,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847699,1.1.2.4.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847700,1.1.2.4.1.3,6.2
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847700,1.1.2.4.1.3,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847700,1.1.2.4.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,Estimate,v88847701,1.1.2.4.2.1,68.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,Estimate,v88847701,1.1.2.4.2.1,66.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,Estimate,v88847701,1.1.2.4.2.1,78.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847702,1.1.2.4.2.2,63.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847702,1.1.2.4.2.2,57.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847702,1.1.2.4.2.2,71.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847703,1.1.2.4.2.3,72.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847703,1.1.2.4.2.3,74.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847703,1.1.2.4.2.3,84
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,Estimate,v88847704,1.1.2.4.3.1,14.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,Estimate,v88847704,1.1.2.4.3.1,11.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,Estimate,v88847704,1.1.2.4.3.1,9.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847705,1.1.2.4.3.2,10.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847705,1.1.2.4.3.2,8.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847705,1.1.2.4.3.2,7.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847706,1.1.2.4.3.3,18.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847706,1.1.2.4.3.3,15.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847706,1.1.2.4.3.3,12.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,Estimate,v88847707,1.1.2.4.4.1,14.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,Estimate,v88847707,1.1.2.4.4.1,18.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,Estimate,v88847707,1.1.2.4.4.1,8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847708,1.1.2.4.4.2,10.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847708,1.1.2.4.4.2,14
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847708,1.1.2.4.4.2,4.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847709,1.1.2.4.4.3,18.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847709,1.1.2.4.4.3,24
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847709,1.1.2.4.4.3,14.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,Estimate,v88847710,1.1.2.5.1.1,3.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,Estimate,v88847710,1.1.2.5.1.1,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,Estimate,v88847710,1.1.2.5.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847711,1.1.2.5.1.2,2.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847711,1.1.2.5.1.2,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847711,1.1.2.5.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847712,1.1.2.5.1.3,6.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847712,1.1.2.5.1.3,F
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847712,1.1.2.5.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,Estimate,v88847713,1.1.2.5.2.1,66.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,Estimate,v88847713,1.1.2.5.2.1,67.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,Estimate,v88847713,1.1.2.5.2.1,58.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847714,1.1.2.5.2.2,59.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847714,1.1.2.5.2.2,58.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847714,1.1.2.5.2.2,47.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847715,1.1.2.5.2.3,73.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847715,1.1.2.5.2.3,75.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847715,1.1.2.5.2.3,68
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,Estimate,v88847716,1.1.2.5.3.1,12.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,Estimate,v88847716,1.1.2.5.3.1,13
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,Estimate,v88847716,1.1.2.5.3.1,15.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847717,1.1.2.5.3.2,9.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847717,1.1.2.5.3.2,8.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847717,1.1.2.5.3.2,10.4
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847718,1.1.2.5.3.3,17.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847718,1.1.2.5.3.3,20.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847718,1.1.2.5.3.3,23.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,Estimate,v88847719,1.1.2.5.4.1,16.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,Estimate,v88847719,1.1.2.5.4.1,10.8
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,Estimate,v88847719,1.1.2.5.4.1,21.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847720,1.1.2.5.4.2,9.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847720,1.1.2.5.4.2,7.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847720,1.1.2.5.4.2,12.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847721,1.1.2.5.4.3,26
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847721,1.1.2.5.4.3,14.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Males,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847721,1.1.2.5.4.3,33.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,Estimate,v88847722,1.1.3.1.1.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,Estimate,v88847722,1.1.3.1.1.1,3.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,Estimate,v88847722,1.1.3.1.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847723,1.1.3.1.1.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847723,1.1.3.1.1.2,1.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"Low 95% confidence interval, estimate",v88847723,1.1.3.1.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847724,1.1.3.1.1.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847724,1.1.3.1.1.3,5.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Underweight,"High 95% confidence interval, estimate",v88847724,1.1.3.1.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,Estimate,v88847725,1.1.3.1.2.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,Estimate,v88847725,1.1.3.1.2.1,71.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,Estimate,v88847725,1.1.3.1.2.1,70.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847726,1.1.3.1.2.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847726,1.1.3.1.2.2,65.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847726,1.1.3.1.2.2,65.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847727,1.1.3.1.2.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847727,1.1.3.1.2.3,76
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Normal weight,"High 95% confidence interval, estimate",v88847727,1.1.3.1.2.3,74.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,Estimate,v88847728,1.1.3.1.3.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,Estimate,v88847728,1.1.3.1.3.1,16.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,Estimate,v88847728,1.1.3.1.3.1,14.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847729,1.1.3.1.3.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847729,1.1.3.1.3.2,12.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"Low 95% confidence interval, estimate",v88847729,1.1.3.1.3.2,11
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847730,1.1.3.1.3.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847730,1.1.3.1.3.3,21.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Overweight,"High 95% confidence interval, estimate",v88847730,1.1.3.1.3.3,19.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,Estimate,v88847731,1.1.3.1.4.1,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,Estimate,v88847731,1.1.3.1.4.1,9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,Estimate,v88847731,1.1.3.1.4.1,9.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847732,1.1.3.1.4.2,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847732,1.1.3.1.4.2,6.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"Low 95% confidence interval, estimate",v88847732,1.1.3.1.4.2,8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847733,1.1.3.1.4.3,..
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847733,1.1.3.1.4.3,11.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 3 to 17,Obese,"High 95% confidence interval, estimate",v88847733,1.1.3.1.4.3,11.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,Estimate,v88847734,1.1.3.2.1.1,3.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,Estimate,v88847734,1.1.3.2.1.1,3.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,Estimate,v88847734,1.1.3.2.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847735,1.1.3.2.1.2,2.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847735,1.1.3.2.1.2,1.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"Low 95% confidence interval, estimate",v88847735,1.1.3.2.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847736,1.1.3.2.1.3,6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847736,1.1.3.2.1.3,6.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Underweight,"High 95% confidence interval, estimate",v88847736,1.1.3.2.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,Estimate,v88847737,1.1.3.2.2.1,72.5
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,Estimate,v88847737,1.1.3.2.2.1,72.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,Estimate,v88847737,1.1.3.2.2.1,71.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847738,1.1.3.2.2.2,65.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847738,1.1.3.2.2.2,65.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847738,1.1.3.2.2.2,66.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847739,1.1.3.2.2.3,78.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847739,1.1.3.2.2.3,78
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Normal weight,"High 95% confidence interval, estimate",v88847739,1.1.3.2.2.3,76.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,Estimate,v88847740,1.1.3.2.3.1,12.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,Estimate,v88847740,1.1.3.2.3.1,16.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,Estimate,v88847740,1.1.3.2.3.1,12.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847741,1.1.3.2.3.2,10.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847741,1.1.3.2.3.2,12.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"Low 95% confidence interval, estimate",v88847741,1.1.3.2.3.2,8.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847742,1.1.3.2.3.3,15.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847742,1.1.3.2.3.3,20.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Overweight,"High 95% confidence interval, estimate",v88847742,1.1.3.2.3.3,19.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,Estimate,v88847743,1.1.3.2.4.1,11
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,Estimate,v88847743,1.1.3.2.4.1,8.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,Estimate,v88847743,1.1.3.2.4.1,10.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847744,1.1.3.2.4.2,8.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847744,1.1.3.2.4.2,5.9
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"Low 95% confidence interval, estimate",v88847744,1.1.3.2.4.2,7.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847745,1.1.3.2.4.3,14.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847745,1.1.3.2.4.3,11.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 17,Obese,"High 95% confidence interval, estimate",v88847745,1.1.3.2.4.3,13.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,Estimate,v88847758,1.1.3.4.1.1,F
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,Estimate,v88847758,1.1.3.4.1.1,4.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,Estimate,v88847758,1.1.3.4.1.1,6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847759,1.1.3.4.1.2,F
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847759,1.1.3.4.1.2,2.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"Low 95% confidence interval, estimate",v88847759,1.1.3.4.1.2,3.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847760,1.1.3.4.1.3,F
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847760,1.1.3.4.1.3,8.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Underweight,"High 95% confidence interval, estimate",v88847760,1.1.3.4.1.3,11
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,Estimate,v88847761,1.1.3.4.2.1,73.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,Estimate,v88847761,1.1.3.4.2.1,75
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,Estimate,v88847761,1.1.3.4.2.1,71.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847762,1.1.3.4.2.2,68
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847762,1.1.3.4.2.2,70
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"Low 95% confidence interval, estimate",v88847762,1.1.3.4.2.2,63.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847763,1.1.3.4.2.3,77.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847763,1.1.3.4.2.3,79.4
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Normal weight,"High 95% confidence interval, estimate",v88847763,1.1.3.4.2.3,78.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,Estimate,v88847764,1.1.3.4.3.1,13.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,Estimate,v88847764,1.1.3.4.3.1,13.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,Estimate,v88847764,1.1.3.4.3.1,13.4
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847765,1.1.3.4.3.2,9.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847765,1.1.3.4.3.2,10.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"Low 95% confidence interval, estimate",v88847765,1.1.3.4.3.2,7.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847766,1.1.3.4.3.3,19.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847766,1.1.3.4.3.3,17.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Overweight,"High 95% confidence interval, estimate",v88847766,1.1.3.4.3.3,22.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,Estimate,v88847767,1.1.3.4.4.1,8.8
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,Estimate,v88847767,1.1.3.4.4.1,6.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,Estimate,v88847767,1.1.3.4.4.1,9.4
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847768,1.1.3.4.4.2,5.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847768,1.1.3.4.4.2,4.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"Low 95% confidence interval, estimate",v88847768,1.1.3.4.4.2,6.2
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847769,1.1.3.4.4.3,13.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847769,1.1.3.4.4.3,10.5
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 6 to 11,Obese,"High 95% confidence interval, estimate",v88847769,1.1.3.4.4.3,13.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,Estimate,v88847770,1.1.3.5.1.1,x
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,Estimate,v88847770,1.1.3.5.1.1,x
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,Estimate,v88847770,1.1.3.5.1.1,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847771,1.1.3.5.1.2,x
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847771,1.1.3.5.1.2,x
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"Low 95% confidence interval, estimate",v88847771,1.1.3.5.1.2,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847772,1.1.3.5.1.3,x
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847772,1.1.3.5.1.3,x
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Underweight,"High 95% confidence interval, estimate",v88847772,1.1.3.5.1.3,F
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,Estimate,v88847773,1.1.3.5.2.1,72.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,Estimate,v88847773,1.1.3.5.2.1,69.7
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,Estimate,v88847773,1.1.3.5.2.1,71.6
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847774,1.1.3.5.2.2,60.7
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847774,1.1.3.5.2.2,58
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"Low 95% confidence interval, estimate",v88847774,1.1.3.5.2.2,63.8
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847775,1.1.3.5.2.3,81.2
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847775,1.1.3.5.2.3,79.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Normal weight,"High 95% confidence interval, estimate",v88847775,1.1.3.5.2.3,78.3
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,Estimate,v88847776,1.1.3.5.3.1,11.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,Estimate,v88847776,1.1.3.5.3.1,18.3
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,Estimate,v88847776,1.1.3.5.3.1,12.5
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847777,1.1.3.5.3.2,9.3
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847777,1.1.3.5.3.2,12.1
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"Low 95% confidence interval, estimate",v88847777,1.1.3.5.3.2,8.1
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847778,1.1.3.5.3.3,15.1
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847778,1.1.3.5.3.3,26.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Overweight,"High 95% confidence interval, estimate",v88847778,1.1.3.5.3.3,18.7
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,Estimate,v88847779,1.1.3.5.4.1,12.9
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,Estimate,v88847779,1.1.3.5.4.1,9.6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,Estimate,v88847779,1.1.3.5.4.1,10.9
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847780,1.1.3.5.4.2,7.4
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847780,1.1.3.5.4.2,6
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"Low 95% confidence interval, estimate",v88847780,1.1.3.5.4.2,7.4
+2009,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847781,1.1.3.5.4.3,21.6
+2011,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847781,1.1.3.5.4.3,15.2
+2013,Canada,Body Mass Index (BMI) - Center for Disease Control (CDC) classification,Females,Ages 12 to 17,Obese,"High 95% confidence interval, estimate",v88847781,1.1.3.5.4.3,15.6
