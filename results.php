@@ -19,23 +19,22 @@
 	}
 	
 	$stmt = $connection->stmt_init();
-	if(!$stmt->prepare("SELECT * FROM `InternetUse` WHERE `Year` = 2009 AND `AgeRange_Lower`<= ? AND `AgeRange_Higher`>= ?"))
+	if(!$stmt->prepare("SELECT OncePerDay, OncePerWeek, OncePerMonth, LessThanMonth FROM InternetUse WHERE Year = 2009 AND AgeRange_Lower <= ? AND AgeRange_Higher >= ?"))
 	{
 		print("Failed to prepare statement\n");
 	}
-	$stmt->bind_param("ss", $age, $age);
-	$stmt->execute();
-	
-	echo "Success!";
-	
-	$result = $stmt->get_result();
-	
-	while ($row = $result->fetch_array(MYSQLI_NUM))
-        {
-            foreach ($row as $r)
-            {
-                print "$r ";
-            }
-            print "\n";
+    else {
+        $stmt->bind_param("ii", intval($age), intval($age));
+        $stmt->execute();
+
+        $stmt->bind_result($onceperday, $onceperweek, $oncepermonth, $lessthanmonth);
+
+        while($stmt->fetch()) {
+            printf("%s %s %s %s\n", $onceperday, $onceperweek, $oncepermonth, $lessthanmonth);
         }
+
+        $stmt->close();
+
+    }
+
 ?>
