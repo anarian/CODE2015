@@ -20,54 +20,48 @@
         die("$connection->connect_errno: $connection->connect_error");
     }
 
-    function getInternetUse($connection, $age, $internet_use)
+    function getInternetUse($connection, $age)
     {
-        $stmt = $connection->stmt_init();
+        $InternetDataStmt = $connection->stmt_init();
+        $InternetDataStmt->prepare("SELECT OncePerDay, OncePerWeek, OncePerMonth, LessThanMonth, NotSpecified
+                                        FROM InternetUse
+                                        WHERE Year = 2009
+                                          AND AgeRange_Lower <= ?
+                                          AND AgeRange_Higher >= ?
+                                          AND AgeRange_Higher != 100");
 
-        switch($internet_use) {
+        $InternetDataStmt->bind_param("ii", intval($age), intval($age));
+        $InternetDataStmt->execute();
+
+        $OncePerDayResult = 0;
+        $OncePerWeekResult = 0;
+        $OncePerMonthResult = 0;
+        $LessThanMonthResult = 0;
+        $NotSpecified = 0;
+
+        $InternetDataStmt->bind_result($OncePerDayResult, $OncePerWeekResult, $OncePerMonthResult, $LessThanMonthResult, $NotSpecified);
+        $InternetDataStmt->fetch();
+
+        $InternetDataStmt->close();
+
+        return array ($OncePerDayResult,$OncePerMonthResult, $OncePerWeekResult, $LessThanMonthResult, $NotSpecified);
+    }
+
+
+    function getInternetUseValue($internet_use, $data)
+    {
+
+        switch($internet_use)
+        {
             case "once-per-day":
-                $stmt->prepare("SELECT OncePerDay
-                                FROM InternetUse
-                                WHERE Year = 2009
-                                  AND AgeRange_Lower <= ?
-                                  AND AgeRange_Higher >= ?
-                                  AND AgeRange_Higher != 100");
-                break;
+                return $data[0];
             case "once-per-week":
-                $stmt->prepare("SELECT OncePerWeek
-                                FROM InternetUse
-                                WHERE Year = 2009
-                                  AND AgeRange_Lower <= ?
-                                  AND AgeRange_Higher >= ?
-                                  AND AgeRange_Higher != 100");
-                break;
+                return $data[1];
             case "once-per-month":
-                $stmt->prepare("SELECT OncePerMonth
-                                FROM InternetUse
-                                WHERE Year = 2009
-                                  AND AgeRange_Lower <= ?
-                                  AND AgeRange_Higher >= ?
-                                  AND AgeRange_Higher != 100");
-                break;
-            case "less-than-month":
-                $stmt->prepare("SELECT LessThanMonth
-                                FROM InternetUse
-                                WHERE Year = 2009
-                                  AND AgeRange_Lower <= ?
-                                  AND AgeRange_Higher >= ?
-                                  AND AgeRange_Higher != 100");
-                break;
+                return $data[2];
+            case "less-per-month":
+                return $data[3];
         }
-
-        $stmt->bind_param("ii", intval($age), intval($age));
-        $stmt->execute();
-
-        $result = -1.0;
-        $stmt->bind_result($result);
-        $stmt->fetch();
-
-        $stmt->close();
-        return floatval($result);
     }
 
     function returnBMI($height, $weight) {
@@ -104,6 +98,8 @@
         }
     }
 
+$internet_use_data = getInternetUse($connection, $age);
+
 ?>
 
 <!doctype html>
@@ -111,6 +107,55 @@
     <head>
         <?php include("head.php"); ?>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawInternetChart);
+            google.setOnLoadCallback(drawBMIChart);
+            function drawBMIChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['blah', 2],
+                    ['blah2', 5]
+                ]);
+
+                var options = {
+                    title: 'BMI Across Canada',
+                    pieHole: 0.4
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementByID('BMIDonut'));
+            chart.draw(data,options);
+            }
+
+            function drawInternetChart() {
+                var data = google.visualization.arrayToDataTable([
+                    <?php
+                        printf("
+                            ['Frequency', 'Percent'],
+                            ['At least once per day', %s],
+                            ['At least once per week', %s],
+                            ['At least once per month', %s],
+                            ['Less than once a month', %s],
+                            ['Not specified', %s]
+                        ", $internet_use_data[0], $internet_use_data[1], $internet_use_data[2], $internet_use_data[3], $internet_use_data[4]);
+                     ?>
+                ]);
+
+                var options = {
+                    title: 'Internet Use Across Canada',
+                    pieHole: 0.4,
+                    chartArea: {
+                        width: 375,
+                        height: 375,
+                        top: 30,
+                        left: 75
+                    }
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('InternetDonut'));
+                chart.draw(data,options);
+            }
+
+        </script>
     </head>
     <body>
         <?php include("header.php"); ?>
@@ -119,14 +164,36 @@
             <section class="intro">
                 <br />
                 <p>You are a <?=$age?> year old <?=parseGender($gender)?>.</p>
-                <?php if($height != "" && $weight != "") echo "<p>From your data, your BMI is "
-                    . number_format(returnBMI($height, $weight),2) . ", which is //TODO: Get stat here//.</p>" ?>
+                <?php if($height != "" && $weight != "")
+                    echo "
+                    <section class='row'>
+                        <div class='col'>
+                            <p>From your data, your BMI is "
+                            . number_format(returnBMI($height, $weight),2) .
+                            ", which is //TODO: Get stat here//.</p>
+                        </div>
+                        <div class='col'>
+                            <div id='BMIDonut' style='width:350px; height:350px;'></div>
+                        </div>
+                    </section>";
+                ?>
                 <?php if($self_rate != "") echo "<p>You rated your health as being " .
                     getSelfHealth($self_rate) . ". This is the same as //TODO: Get stat here//.</p>" ?>
-                <?php if($internet_use != "") echo "<p>Your internet use is " .
-                    internetUseText($internet_use) . " which is similar to " .
-                    number_format(getInternetUse($connection, $age, $internet_use),1) .
-                    "% of Canadians around your age. </p>" ?>
+                <?php if($internet_use != "") {
+                    echo "
+                    <section class='row'>
+                        <div class='col'>
+                            <p>Your internet use is " .
+                        internetUseText($internet_use) . " which is similar to " .
+                        number_format(getInternetUseValue($internet_use, $internet_use_data)) .
+                        "% of Canadians around your age. </p>
+                        </div>
+                        <div class='col'>
+                            <div id='InternetDonut' style='width:350px; height:350px;'></div>
+                        </div>
+                    </section>";
+                    }
+                ?>
                 <?php if($height == "" && $self_rate == "" && $weight == "" && $internet_use == "")
                     echo "You haven't provided any other information. If you're concerned about your data privacy,
                     this website does not store any data that is provided.\n";
@@ -137,6 +204,7 @@
         </div>
 
         <?php include("footer.php");?>
+
 
 
     </body>

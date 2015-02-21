@@ -19,19 +19,15 @@
                 		<div class="col">
                             <label for="age">Age:</label>
                             <input type="number" name="age" required/>
-                        </div>
-                        <div class="col">
+                            <br />
                             <label for="gender">Gender: </label>
                             <label><input type="radio" name="gender" value="Male" required>Male</label>
                             <label><input type="radio" name="gender" value="Female">Female</label>
                         </div>
-                    </section
-                    <section class="row">
                         <div class="col">
                             <label for="height" >Height (m): </label>
                             <input type="number" step="any" name="height"/>
-                        </div>
-                        <div class="col">
+                            <br />
                             <label for="weight">Weight (kg): </label>
                             <input type="number" step="any" name="weight"/>
                         </div>
