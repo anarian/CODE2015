@@ -29,51 +29,53 @@
                 	<section class="row">
                 		<div class="col">
                             <label for="age">Age:</label>
-                            <input type="number" name="age" required value="hello" onclick="getPosition()"/>
+                            <br />
+                            <input type="number" name="age" required value="hello" onclick="getPosition()" id="age" />
+                            <br />
                             <br />
                             <label for="gender">Gender: </label>
-                            <label><input type="radio" name="gender" value="Male" required>Male</label>
-                            <label><input type="radio" name="gender" value="Female">Female</label>
+                            <br />
+                            <input type="radio" id="gender1" name="gender" value="Male" required>
+                            <label for="gender1">Male</label>
+                            <input type="radio" id="gender2" name="gender" value="Female">
+                            <label for="gender2">Female</label>
                         </div>
                         <div class="col">
-                            <label for="height" >Height (m): </label>
-                            <input type="number" step="any" name="height"/>
+                            <label for="height" >Height (m): </label><br />
+                            <input type="number" step="any" name="height" id="height"/><br />
                             <br />
-                            <label for="weight">Weight (kg): </label>
-                            <input type="number" step="any" name="weight"/>
+                            <label for="weight">Weight (kg): </label><br />
+                            <input type="number" step="any" name="weight" id="weight"/>
                         </div>
                     </section>
                     <section class="row">
-                        <div class="col-full">
+                        <div class="col">
                             <label for="self-rate">How do you feel about your current health?<br /></label>
-                            <label><input type="radio" name="self-rate" value="PoorFair">&nbsp;Poor or Fair</label>
-                            <label><input type="radio" name="self-rate" value="Good">&nbsp;Good</label>
-                            <label><input type="radio" name="self-rate" value="VGood">&nbsp;Very Good</label>
-                            <label><input type="radio" name="self-rate" value="Excellent">&nbsp;Excellent</label>
+                            <input type="radio" id="self-rate1" name="self-rate" value="PoorFair" /><label for="self-rate1">Poor or Fair</label>
+                            <input type="radio" id="self-rate2" name="self-rate" value="Good" /><label for="self-rate2">Good</label>
+                            <input type="radio" id="self-rate3" name="self-rate" value="VGood" /><label for="self-rate3">Very Good</label>
+                            <input type="radio" id="self-rate4" name="self-rate" value="Excellent" /><label for="self-rate4">Excellent</label>
+                        </div>
+                        <div class="col">
+                            <label for="internet-use">How often do you use the internet?<br /></label>
+                            <input type="radio" id="internetuse1" name="internet-use" value="once-per-day"><label for="internetuse1">At least once per day</label>
+                            <input type="radio" id="internetuse2" name="internet-use" value="once-per-week"><label for="internetuse2">At least once per week</label>
+                            <input type="radio" id="internetuse3" name="internet-use" value="once-per-month"><label for="internetuse3">At least once per month</label>
+                            <input type="radio" id="internetuse4" name="internet-use" value="less-per-month"><label for="internetuse4">Less than once per month</label>
                         </div>
                     </section>
                     <section class="row">
-                        <div class="col-full">
-                            <label for="internet-use">How often do you use the internet?</label>
-                            <label><input type="radio" name="internet-use" value="once-per-day">&nbsp;At least once per day</label>
-                            <label><input type="radio" name="internet-use" value="once-per-week">&nbsp;At least once per week</label>
-                            <label><input type="radio" name="internet-use" value="once-per-month">&nbsp;At least once per month</label>
-                            <label><input type="radio" name="internet-use" value="less-per-month">&nbsp;Less than once per month</label>
+                        <div class="col">
+                            <label for="smoking">How often do you smoke?<br /></label>
+                            <input type="radio" id="smoking1" name="smoking" value="never"><label for="smoking1">Never</label>
+                            <input type="radio" id="smoking2" name="smoking" value="former"><label for="smoking2">Former</label>
+                            <input type="radio" id="smoking3" name="smoking" value="occasional"><label for="smoking3">Occasional</label>
+                            <input type="radio" id="smoking4" name="smoking" value="daily"><label for="smoking4">Daily</label>
                         </div>
-                    </section>
-                    <section class="row">
-                        <div class="col-full">
-                            <label for="smoking">How often do you smoke?</label>
-                            <label><input type="radio" name="smoking" value="never">&nbsp;Never</label>
-                            <label><input type="radio" name="smoking" value="former">&nbsp;Former</label>
-                            <label><input type="radio" name="smoking" value="occasional">&nbsp;Occasional</label>
-                            <label><input type="radio" name="smoking" value="daily = ">&nbsp;Daily</label>
-                        </div>
-                    </section>
-                    <section class="row">
-                        <input type="text" id="geoLat" name="geoLat" hidden="true" value="" />
-                        <input type="text" id="geoLong" name="geoLong" hidden="true" value="" />
-                        <div class="col-full"><input type="submit" /></div>
+                        <div class="col">
+                            <input type="text" id="geoLat" name="geoLat" hidden="true" value="" />
+                            <input type="text" id="geoLong" name="geoLong" hidden="true" value="" />
+                            <input type="submit" /></div>
                     </section
                 </form>
 		</section>

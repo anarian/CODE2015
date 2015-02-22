@@ -1,6 +1,8 @@
 <?php
     require('key.php');
 
+    $testing = 1;
+
     $age = $_POST["age"];
 	$gender = $_POST["gender"];
 	$height = $_POST["height"];
@@ -15,7 +17,7 @@
 
 	$connection = new mysqli($servername, $username, $password, $dbname);
 
-    if($latitude != "" && $longitude != "" && $latitude != 0 && $longitude != 0) {
+    if($latitude != "" && $longitude != "" && $latitude != 0 && $longitude != 0 && $testing != 1) {
         $jsonurl = "http://dev.virtualearth.net/REST/v1/Locations/" . $latitude . "," . $longitude . "?includeEntityTypes=Postcode1&includeNeighborhood=0&include=includeValue&key=AtTgMeGeeWAzAa0pjP1Qu32IdYVz8nhogrKzXH7gCZnIhZpiSvhDVcWvUKwH_FfT";
         $json = file_get_contents($jsonurl);
 
@@ -86,29 +88,56 @@
     {
         $sex = $gender == "Male" ? "M" : "F";
         $BMIStmt = $connection->stmt_init();
-        $BMIStmt->prepare("SELECT UnderPerc,NormalPerc,SomePerc,OverPerc,NotPerc
+        $string = "";
+        if($age > 18) {
+            $string = "SELECT UnderPerc,NormalPerc,SomePerc,OverPerc,NotPerc
                                   FROM AdultBMI
                                   WHERE Sex = ?
                                     AND AgeRangeLow <= ?
                                     AND AgeRangeHigh >= ?
                                     AND AgeRangeHigh != 100
                                     AND Location = 'Canada'
-                                    ORDER BY TotalNum");
+                                    ORDER BY TotalNum";
+            $BMIStmt->prepare($string);
+            $BMIStmt->bind_param("sii", $sex, intval($age), intval($age));
+            $BMIStmt->execute();
 
-        $BMIStmt->bind_param("sii", $sex, intval($age), intval($age));
-        $BMIStmt->execute();
+            $UnderNum = 0;
+            $NormalNum = 0;
+            $SomeNum = 0;
+            $OverNum = 0;
+            $NotNum = 0;
 
-        $UnderNum = 0;
-        $NormalNum = 0;
-        $SomeNum = 0;
-        $OverNum = 0;
-        $NotNum = 0;
+            $BMIStmt->bind_result($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
+            $BMIStmt->fetch();
+            $BMIStmt->close();
 
-        $BMIStmt->bind_result($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
-        $BMIStmt->fetch();
-        $BMIStmt->close();
+            return array ($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
+        }
+        else {
+            $string = "SELECT UnderEst,NormalEst,OverEst,ObesesEst
+                                    FROM ChildBMI
+                                    WHERE Sex = ?
+                                      AND AgeRangeLow <= ?
+                                      AND AgeRangeHigh >= ?
+                                      AND Year = 2013
+                                      AND Geo = 'Canada'
+                                      ORDER BY AgeRangeHigh";
+            $BMIStmt->prepare($string);
+            $BMIStmt->bind_param("sii", $sex, intval($age), intval($age));
+            $BMIStmt->execute();
 
-        return array ($UnderNum, $NormalNum, $SomeNum, $OverNum, $NotNum);
+            $UnderNum = 0;
+            $NormalNum = 0;
+            $SomeNum = 0;
+            $OverNum = 0;
+
+            $BMIStmt->bind_result($UnderNum, $NormalNum, $SomeNum, $OverNum);
+            $BMIStmt->fetch();
+            $BMIStmt->close();
+
+            return array ($UnderNum, $NormalNum, $SomeNum, $OverNum);
+        }
     }
 
     function getSmokeData($connection, $age, $gender)
@@ -306,25 +335,25 @@ $smoke_data = getSmokeData($connection, $age, $gender);
         return $items[$rand_key];
     }
 
-    function smokingInfo($smoking, $smoke_data, $age, $gender, $json, $googlemapskey)
+    function smokingInfo($smoking, $smoke_data, $age, $gender, $json, $googlemapskey, $testing)
     {
-        $parseGender = $gender == "M" ? "men" : "women";
+        $parseGender = $gender == "Male" ? "men" : "women";
         $percent = getSmokePercent($smoking, $smoke_data);
         if ($smoking == "never") {
-            return "<a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015%2CCanLife&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20of%20Canada%20who%20have%20never%20smoked!\" class=\"twitter-hashtag-button\">Tweet #CODE2015%2CCanLife</a>
+            return "<h4>Tweet your result!</h4><a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20in%20Canada%20who%20have%20never%20smoked!\"  class=\"twitter-hashtag-button\" data-size=\"large\">Tweet #CODE2015</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        }";
+        ";
         }
         else if($smoking == "former") {
-            return "<a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015%2CCanLife&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20of%20Canada%20who%20have%20successfully%20quit%20smoking!\" class=\"twitter-hashtag-button\">Tweet #CODE2015%2CCanLife</a>
+            return "<h4>Tweet your result!</h4><a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015%2CCanLife&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20in%20Canada%20who%20have%20successfully%20quit%20smoking!\"  class=\"twitter-hashtag-button\" data-size=\"large\">Tweet #CODE2015</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        }";
+        ";
         }
         else {
-            return "<iframe width='550' height='300'
+            return "<h4>Might we suggest a few places to help you stop?</h4><iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=smoking+clinics+near+M5G'>
+                            &q=stop+smoking+clinics+near+" . $testing == 1 ? 'M5G' : $json . "'>
                         </iframe>";
         }
     }
@@ -345,6 +374,7 @@ $smoke_data = getSmokeData($connection, $age, $gender);
             function drawBMIChart() {
                 var data = google.visualization.arrayToDataTable([
                     <?php
+                        if($age > 18) {
                         printf("
                             ['BMI', 'Percent'],
                             ['Underweight', %s],
@@ -353,6 +383,16 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                             ['Overweight', %s],
                             ['Not specified', %s]
                         ", $bmi_data[0], $bmi_data[1], $bmi_data[2], $bmi_data[3], $bmi_data[4]);
+                        }
+                        else {
+                            printf("
+                            ['BMI', 'Percent'],
+                            ['Underweight', %s],
+                            ['Normal weight', %s],
+                            ['Overweight', %s],
+                            ['Obese', %s]
+                        ", $bmi_data[0], $bmi_data[1], $bmi_data[2], $bmi_data[3]);
+                        }
                     ?>
                 ]);
 
@@ -416,7 +456,7 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                     pieHole: 0.4,
                     chartArea: {
                         width: 375,
-                        height: 375,
+                        height: 450,
                         top: 25
                     }
                 };
@@ -494,6 +534,8 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                     }
                 ?>
                 <?php if($self_rate != "") {
+                    $zip = $testing == 1 ? "M5G" : $jsonObject->resourceSets[0]->resources[0]->address->postalCode;
+                    $url = "https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "&q=" . $task_data[0] . "+near+" . $zip . "'>'";
                     echo "<h3>Self-Rated Health</h3>
                     <section class='row'>
                         <div class='col'>
@@ -504,13 +546,11 @@ $smoke_data = getSmokeData($connection, $age, $gender);
 			<h4>Why don't you try " . $task_data[1] . " to keep fit? We found some places close to you!</h4>
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
-                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=" . $task_data[0]  . "+near+M5G'>
+                          src='" . $url . "'>
                         </iframe>
-                        // . $jsonObject->resourceSets[0]->resources[0]->address->postalCode .
                         </div>
                         <div class='col'>
-                            <div id='SelfHealthDonut' style='width=400px; height=350px;'></div>
+                            <div id='SelfHealthDonut' style='width=400px; height=500px;'></div>
                         </div>
                     </section>";
                 }
@@ -531,13 +571,13 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                     }
                 ?>
                 <?php if($smoking != "") {
+                    $smoketext = getSmokeText($smoking);
                     echo "<h3>Smoking</h3>
                     <section class='row'>
                         <div class='col'>
-                            <p>You " . getSmokeText($smoking) . ". "
-                        . getSmokePercent($smoking, $smoke_data) .
-                    "% of other Canadians also " . getSmokeText($smoking) . "</p>"
-                        . smokingInfo($smoking, $smoke_data, $age, $gender, $jsonObject->resourceSets[0]->resources[0]->address->postalCode, $googlemapskey) .
+                            <p>You " . $smoketext . ". " . getSmokePercent($smoking, $smoke_data) .
+                    "% of other Canadians also " . $smoketext . "</p>"
+                        . smokingInfo($smoking, $smoke_data, $age, $gender, $jsonObject->resourceSets[0]->resources[0]->address->postalCode, $googlemapskey, $testing) .
                         "</div>
                         <div class='col'>
                             <div id='SmokeDonut' style='width:400px; height:350px;'></div>
@@ -546,7 +586,7 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                     ";
                 }
                 ?>
-                <?php if($height == "" && $self_rate == "" && $weight == "" && $internet_use == "")
+                <?php if($height == "" && $self_rate == "" && $weight == "" && $internet_use == "" && $smoking == "")
                     echo "You haven't provided any other information. If you're concerned about your data privacy,
                     this website does not store any data that is provided.\n";
                     echo "<a href='/'>Go back</a>";
