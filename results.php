@@ -1,7 +1,7 @@
 <?php
     require('key.php');
 
-    $testing = 1;
+    $testing = 0;
 
     $age = $_POST["age"];
 	$gender = $_POST["gender"];
@@ -350,10 +350,11 @@ $smoke_data = getSmokeData($connection, $age, $gender);
         ";
         }
         else {
+			$location = $testing == 1? "M5G" : $json;
+			$string = "https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "&q=stop+smoking+clinics+near+" . $location . "'>";
             return "<h4>Might we suggest a few places to help you stop?</h4><iframe width='550' height='300'
                           frameborder='0' style='border:0'
-                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=stop+smoking+clinics+near+" . $testing == 1 ? 'M5G' : $json . "'>
+                          src='" . $string . "'>
                         </iframe>";
         }
     }
