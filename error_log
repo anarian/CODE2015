@@ -23,3 +23,7 @@
 [21-Feb-2015 18:31:47 America/New_York] PHP Fatal error:  Class 'BingAds\Proxy\ClientProxy' not found in /home/jonabnbb/public_html/code/results.php on line 247
 [21-Feb-2015 18:49:37 America/New_York] PHP Parse error:  syntax error, unexpected '%', expecting ')' in /home/jonabnbb/public_html/code/results.php on line 452
 [21-Feb-2015 18:50:19 America/New_York] PHP Parse error:  syntax error, unexpected '%', expecting ')' in /home/jonabnbb/public_html/code/results.php on line 452
+[21-Feb-2015 19:21:45 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'key.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jonabnbb/public_html/code/results.php on line 2
+[21-Feb-2015 19:21:47 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'key.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jonabnbb/public_html/code/results.php on line 2
+[21-Feb-2015 19:21:49 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'key.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jonabnbb/public_html/code/results.php on line 2
+[21-Feb-2015 19:21:55 America/New_York] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'key.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/jonabnbb/public_html/code/results.php on line 2

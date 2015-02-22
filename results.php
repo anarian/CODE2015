@@ -1,18 +1,27 @@
 <?php
-    $servername = "localhost";
-    $username = "jonabnbb_code";
-    $password = "code2015";
-    $dbname = "jonabnbb_code";
+    require('key.php');
 
-	$age = $_POST["age"];
+    $age = $_POST["age"];
 	$gender = $_POST["gender"];
 	$height = $_POST["height"];
 	$weight = $_POST["weight"];
 	$self_rate = $_POST["self-rate"];
 	$internet_use = $_POST["internet-use"];
     $smoking = $_POST["smoking"];
+    $latitude = $_POST["geoLat"];
+    $longitude = $_POST["geoLong"];
+
+    echo $latitude . $longitude;
 
 	$connection = new mysqli($servername, $username, $password, $dbname);
+
+    if($latitude != "" && $longitude != "") {
+        $jsonurl = "http://dev.virtualearth.net/REST/v1/Locations/" . $latitude . "," + $longitude + "?includeEntityTypes=Postcode1&includeNeighborhood=0&include=includeValue&key=AtTgMeGeeWAzAa0pjP1Qu32IdYVz8nhogrKzXH7gCZnIhZpiSvhDVcWvUKwH_FfT";
+        $json = file_get_contents($jsonurl);
+
+        $jsonObject = json_decode($json);
+    }
+
 
     if($connection->connect_error) {
         die("$connection->connect_errno: $connection->connect_error");
@@ -408,6 +417,11 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                         . number_format($bmi, 2) .
                         ", which is " . returnBMItype($bmi) . ". " . getBMIPercent($bmi, $bmi_data) ."% of
                         Canadians are also " . returnBMItype($bmi) . ". </p>
+                        <iframe width='550' height='300'
+                          frameborder='0' style='border:0'
+                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
+                            &q=hiking+near+" . $jsonObject->{'postalCode'} . "'>
+                        </iframe>
                         </div>
                         <div class='col'>
                             <div id='BMIDonut' style='width:400px; height:350px;'></div>
