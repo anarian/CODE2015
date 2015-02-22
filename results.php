@@ -454,6 +454,9 @@ $items = array (
                         . number_format($bmi, 2) .
                         ", which is " . returnBMItype($bmi) . ". " . getBMIPercent($bmi, $bmi_data) ."% of
                         Canadians are also " . returnBMItype($bmi) . ". </p>
+                        <blockquote>
+                            " . array_rand(items, 1) . "
+                        </blockquote>
                         </div>
                         <div class='col'>
                             <div id='BMIDonut' style='width:400px; height:350px;'></div>

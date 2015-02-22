@@ -359,7 +359,7 @@ picture {
 
 blockquote {
   border-left: 2px solid #ddd;
-  color: #fdfdfe;
+  color: #333;
   margin: 1.5em 0;
   padding-left: 0.75em;
 }
@@ -607,7 +607,7 @@ header nav ul li a.bordered {
   width: 48.82117%;
   border-top: 2px solid #ced9e0;
   padding-top: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 #content section.row .col:last-child, #content section.row .col-full:last-child {
   margin-right: 0;
