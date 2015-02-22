@@ -260,6 +260,15 @@
         }
     }
 
+    function get_activity() {
+	$tasks = array("outdoor+parks", "pools", "skating+rinks", "gyms", 
+			"provincial+parks", "soccer+field", "hiking", 
+			"recreation+centre");
+        $rand_key = array_rand($tasks);
+	return $tasks[$rand_key];
+    }
+
+$task_data = get_activity();
 $internet_use_data = getInternetUse($connection, $age);
 $self_health_data = getSelfHealthData($connection, $age, $gender);
 $bmi_data = getBMIData($connection, $age, $gender);
@@ -444,7 +453,7 @@ $items = array (
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=hiking+near+M5G'>
+                            &q=" . $task_data  . "+near+" . $jsonObject->resourceSets[0]->resources[0]->address->postalCode . "'>
                         </iframe>
                         // . $jsonObject->resourceSets[0]->resources[0]->address->postalCode .
                         </div>
