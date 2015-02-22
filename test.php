@@ -1,8 +1,0 @@
-<?php
-$jsonurl = "http://dev.virtualearth.net/REST/v1/Locations/43.6504473,-79.38392619999999?includeEntityTypes=Postcode1&includeNeighborhood=0&include=includeValue&key=AtTgMeGeeWAzAa0pjP1Qu32IdYVz8nhogrKzXH7gCZnIhZpiSvhDVcWvUKwH_FfT";
-$json = '{"authenticationResultCode":"ValidCredentials","brandLogoUri":"http:\/\/dev.virtualearth.net\/Branding\/logo_powered_by.png","copyright":"Copyright © 2015 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.","resourceSets":[{"estimatedTotal":1,"resources":[{"__type":"Location:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1","bbox":[43.64474,-79.39415,43.67024,-79.37705],"name":"Bay Street Corridor, Toronto, ON, Canada","point":{"type":"Point","coordinates":[43.6503511,-79.3833983]},"address":{"adminDistrict":"ON","adminDistrict2":"Toronto","countryRegion":"Canada","formattedAddress":"Bay Street Corridor, Toronto, ON, Canada","postalCode":"M5G"},"confidence":"High","entityType":"Postcode1","geocodePoints":[{"type":"Point","coordinates":[43.6503511,-79.3833983],"calculationMethod":"Rooftop","usageTypes":["Display","Route"]}],"matchCodes":["Good"]}]}],"statusCode":200,"statusDescription":"OK","traceId":"d34789f14ddc404ea611dc64eecb9965|BN20130620|02.00.130.200|BN2SCH020131523, i-5b5e0faa.us-east-1b"}
-';
-$jsonObject = json_decode($json);
-
-print($jsonObject->resourceSets[0]->resources[0]->address->postalCode);
-?>
