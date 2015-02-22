@@ -265,6 +265,15 @@ $self_health_data = getSelfHealthData($connection, $age, $gender);
 $bmi_data = getBMIData($connection, $age, $gender);
 $smoke_data = getSmokeData($connection, $age, $gender);
 
+$items = array (
+    "EggWhite" => "Egg whites are a great source of protein!",
+    "EggYolk" => "Did you know all of an egg's fat is in the yolk?",
+    "FriedEgg" => "2 fried eggs for breakfast provides 12 grams of protein!",
+    "HardBoiledEgg" => "Hard boiled eggs are low-fat source of protein.",
+    "PoachedEgg" => "Enjoy these on toast for a healthy breakfast!",
+    "EggsBenedict" => ""
+);
+
 ?>
 
 <!doctype html>
@@ -417,11 +426,6 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                         . number_format($bmi, 2) .
                         ", which is " . returnBMItype($bmi) . ". " . getBMIPercent($bmi, $bmi_data) ."% of
                         Canadians are also " . returnBMItype($bmi) . ". </p>
-                        <iframe width='550' height='300'
-                          frameborder='0' style='border:0'
-                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=hiking+near+" . $jsonObject->resourceSets[0]->resources[0]->address->postalCode . "'>
-                        </iframe>
                         </div>
                         <div class='col'>
                             <div id='BMIDonut' style='width:400px; height:350px;'></div>
@@ -437,6 +441,12 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                         getSelfHealth($self_rate) .
                         ". This is the same as " . getSelfHealthValue($self_rate, $self_health_data) .
                         "% of the population.</p>
+                        <iframe width='550' height='300'
+                          frameborder='0' style='border:0'
+                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
+                            &q=hiking+near+M5G'>
+                        </iframe>
+                        // . $jsonObject->resourceSets[0]->resources[0]->address->postalCode .
                         </div>
                         <div class='col'>
                             <div id='SelfHealthDonut' style='width=400px; height=350px;'></div>
