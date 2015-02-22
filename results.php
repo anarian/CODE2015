@@ -453,7 +453,7 @@ $items = array (
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=" . $task_data  . "+near+" . $jsonObject->resourceSets[0]->resources[0]->address->postalCode . "'>
+                            &q=" . $task_data  . "+near+M5G'>
                         </iframe>
                         // . $jsonObject->resourceSets[0]->resources[0]->address->postalCode .
                         </div>
