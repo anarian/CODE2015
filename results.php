@@ -275,12 +275,26 @@ $bmi_data = getBMIData($connection, $age, $gender);
 $smoke_data = getSmokeData($connection, $age, $gender);
 
 $items = array (
-    "EggWhite" => "Egg whites are a great source of protein!",
-    "EggYolk" => "Did you know all of an egg's fat is in the yolk?",
-    "FriedEgg" => "2 fried eggs for breakfast provides 12 grams of protein!",
-    "HardBoiledEgg" => "Hard boiled eggs are low-fat source of protein.",
-    "PoachedEgg" => "Enjoy these on toast for a healthy breakfast!",
-    "EggsBenedict" => ""
+    "Egg whites are a great source of protein!",
+    "Did you know all of an egg's fat is in the yolk?",
+    "2 fried eggs for breakfast provides 12 grams of protein!",
+    "Hard boiled eggs are low-fat source of protein.",
+    "Enjoy these on toast for a healthy breakfast!",
+    "Eggs benedict with a side of bacon... Mmmm...",
+    "Omelets are a delicious way to enjoy eggs.",
+    "Cheese omelet, or Omelet du Fromage, is a great way to impress the ladies",
+    "Is butter a carb? I think Health Canada can safely say no to that.",
+    "Margarine has more unsaturated fats than butter!",
+    "Canola oil is a healthy oil to use for cooking.",
+    "Peanuts are great (unless you're allergic, in which case stay away).",
+    "Sesame seeds are tasty!",
+    "Sunflower oil is a great choice for cooking!",
+    "Bacon grease can definitely increase your chace of a heart attack!",
+    "Baked potato chips are a slightly healthier option compared to regular chips.",
+    "Beef jerky has 7g of protein in a 20g package!!!",
+    "Banana chips are a healthy, and tasty snack!",
+    "Baked beans are very high in carbs! Stay away (unless you're on an all-carb diet).",
+    "Peanuts, almonds, and cashews are a great source of healthy fats",
 );
 
 ?>
