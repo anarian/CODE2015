@@ -11,12 +11,12 @@
     $latitude = $_POST["geoLat"];
     $longitude = $_POST["geoLong"];
 
-    echo $latitude . $longitude;
+    $jsonObject = null;
 
 	$connection = new mysqli($servername, $username, $password, $dbname);
 
-    if($latitude != "" && $longitude != "") {
-        $jsonurl = "http://dev.virtualearth.net/REST/v1/Locations/" . $latitude . "," + $longitude + "?includeEntityTypes=Postcode1&includeNeighborhood=0&include=includeValue&key=AtTgMeGeeWAzAa0pjP1Qu32IdYVz8nhogrKzXH7gCZnIhZpiSvhDVcWvUKwH_FfT";
+    if($latitude != "" && $longitude != "" && $latitude != 0 && $longitude != 0) {
+        $jsonurl = "http://dev.virtualearth.net/REST/v1/Locations/" . $latitude . "," . $longitude . "?includeEntityTypes=Postcode1&includeNeighborhood=0&include=includeValue&key=AtTgMeGeeWAzAa0pjP1Qu32IdYVz8nhogrKzXH7gCZnIhZpiSvhDVcWvUKwH_FfT";
         $json = file_get_contents($jsonurl);
 
         $jsonObject = json_decode($json);
@@ -420,7 +420,7 @@ $smoke_data = getSmokeData($connection, $age, $gender);
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=hiking+near+" . $jsonObject->{'postalCode'} . "'>
+                            &q=hiking+near+" . $jsonObject->resourceSets[0]->resources[0]->address->postalCode . "'>
                         </iframe>
                         </div>
                         <div class='col'>

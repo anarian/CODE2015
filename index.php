@@ -3,16 +3,15 @@
 <head>
 	<?php include("head.php"); ?>
     <script>
-        var lat = document.getElementById('geoLat');
-        var long = document.getElementById('geoLong');
-
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
+        function getPosition() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
         }
         function showPosition(position)
         {
-            lat.value = position.coords.latitude;
-            long.value = position.coords.longitude;
+            document.getElementById('geoLat').value = position.coords.latitude;
+            document.getElementById('geoLong').value = position.coords.longitude;
         }
     </script>
 	<title>CanLife</title>
@@ -30,7 +29,7 @@
                 	<section class="row">
                 		<div class="col">
                             <label for="age">Age:</label>
-                            <input type="number" name="age" required value="hello"/>
+                            <input type="number" name="age" required value="hello" onclick="getPosition()"/>
                             <br />
                             <label for="gender">Gender: </label>
                             <label><input type="radio" name="gender" value="Male" required>Male</label>
@@ -72,8 +71,8 @@
                         </div>
                     </section>
                     <section class="row">
-                        <input type="text" id="geoLat" name="geoLat" hidden="true" value="0" />
-                        <input type="text" id="geoLong" name="geoLong" hidden="true" value="0" />
+                        <input type="text" id="geoLat" name="geoLat" hidden="true" value="" />
+                        <input type="text" id="geoLong" name="geoLong" hidden="true" value="" />
                         <div class="col-full"><input type="submit" /></div>
                     </section
                 </form>
