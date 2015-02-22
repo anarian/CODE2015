@@ -261,9 +261,10 @@
     }
 
     function get_activity() {
-	$tasks = array("outdoor+parks", "pools", "skating+rinks", "gyms", 
-			"provincial+parks", "soccer+field", "hiking", 
-			"recreation+centre");
+	$tasks = array(["outdoor+parks", "visiting a park"], ["pools","swimming"], 
+			["skating+rinks", "skating"], ["gyms", "working out"], 
+			["provincial+parks", "camping"], ["soccer+field", "playing soccer"], 
+			["hiking", "hiking"], ["recreation+centre", "joining a community centre"]);
         $rand_key = array_rand($tasks);
 	return $tasks[$rand_key];
     }
@@ -464,10 +465,11 @@ $items = array (
                         getSelfHealth($self_rate) .
                         ". This is the same as " . getSelfHealthValue($self_rate, $self_health_data) .
                         "% of the population.</p>
+			<p>Why don't you try " . $task_data[1] . "? We found some places close to you!</p>
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
-                            &q=" . $task_data  . "+near+M5G'>
+                            &q=" . $task_data[0]  . "+near+M5G'>
                         </iframe>
                         // . $jsonObject->resourceSets[0]->resources[0]->address->postalCode .
                         </div>
