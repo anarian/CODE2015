@@ -279,29 +279,55 @@ $self_health_data = getSelfHealthData($connection, $age, $gender);
 $bmi_data = getBMIData($connection, $age, $gender);
 $smoke_data = getSmokeData($connection, $age, $gender);
 
-$items = array (
-    "Egg whites are a great source of protein!",
-    "Did you know all of an egg's fat is in the yolk?",
-    "2 fried eggs for breakfast provides 12 grams of protein!",
-    "Hard boiled eggs are low-fat source of protein.",
-    "Enjoy these on toast for a healthy breakfast!",
-    "Eggs benedict with a side of bacon... Mmmm...",
-    "Omelets are a delicious way to enjoy eggs.",
-    "Cheese omelet, or Omelet du Fromage, is a great way to impress the ladies",
-    "Is butter a carb? I think Health Canada can safely say no to that.",
-    "Margarine has more unsaturated fats than butter!",
-    "Canola oil is a healthy oil to use for cooking.",
-    "Peanuts are great (unless you're allergic, in which case stay away).",
-    "Sesame seeds are tasty!",
-    "Sunflower oil is a great choice for cooking!",
-    "Bacon grease can definitely increase your chace of a heart attack!",
-    "Baked potato chips are a slightly healthier option compared to regular chips.",
-    "Beef jerky has 7g of protein in a 20g package!!!",
-    "Banana chips are a healthy, and tasty snack!",
-    "Baked beans are very high in carbs! Stay away (unless you're on an all-carb diet).",
-    "Peanuts, almonds, and cashews are a great source of healthy fats",
-);
+    function getQuote() {
+        $items = array (
+            "Egg whites are a great source of protein!",
+            "Did you know all of an egg's fat is in the yolk?",
+            "2 fried eggs for breakfast provides 12 grams of protein!",
+            "Hard boiled eggs are low-fat source of protein.",
+            "Enjoy these on toast for a healthy breakfast!",
+            "Eggs benedict with a side of bacon... Mmmm...",
+            "Omelets are a delicious way to enjoy eggs.",
+            "Cheese omelet, or Omelet du Fromage, is a great way to impress the ladies",
+            "Is butter a carb? I think Health Canada can safely say no to that.",
+            "Margarine has more unsaturated fats than butter!",
+            "Canola oil is a healthy oil to use for cooking.",
+            "Peanuts are great (unless you're allergic, in which case stay away).",
+            "Sesame seeds are tasty!",
+            "Sunflower oil is a great choice for cooking!",
+            "Bacon grease can definitely increase your chace of a heart attack!",
+            "Baked potato chips are a slightly healthier option compared to regular chips.",
+            "Beef jerky has 7g of protein in a 20g package!!!",
+            "Banana chips are a healthy, and tasty snack!",
+            "Baked beans are very high in carbs! Stay away (unless you're on an all-carb diet).",
+            "Peanuts, almonds, and cashews are a great source of healthy fats",
+        );
+        $rand_key = array_rand($items, 1);
+        return $items[$rand_key];
+    }
 
+    function smokingInfo($smoking, $smoke_data, $age, $gender, $json, $googlemapskey)
+    {
+        $parseGender = $gender == "M" ? "men" : "women";
+        $percent = getSmokePercent($smoking, $smoke_data);
+        if ($smoking == "never") {
+            return "<a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015%2CCanLife&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20of%20Canada%20who%20have%20never%20smoked!\" class=\"twitter-hashtag-button\">Tweet #CODE2015%2CCanLife</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        }";
+        }
+        else if($smoking == "former") {
+            return "<a href=\"https://twitter.com/intent/tweet?button_hashtag=CODE2015%2CCanLife&text=I'm%20a%20part%20of%20the%20" . $percent . "%25%20of%20" . $age . "%20year%20old%20" . $parseGender . "%20of%20Canada%20who%20have%20successfully%20quit%20smoking!\" class=\"twitter-hashtag-button\">Tweet #CODE2015%2CCanLife</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        }";
+        }
+        else {
+            return "<iframe width='550' height='300'
+                          frameborder='0' style='border:0'
+                          src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
+                            &q=smoking+clinics+near+M5G'>
+                        </iframe>";
+        }
+    }
 ?>
 
 <!doctype html>
@@ -445,7 +471,9 @@ $items = array (
             <section class="intro">
                 <br />
                 <p>You are a <?=$age?> year old <?=parseGender($gender)?>.</p>
-                <?php if($height != "" && $weight != "") {
+                <?php
+                $randPhrases = array_rand(items, 1);
+                if($height != "" && $weight != "") {
                     $bmi = returnBMI($height, $weight);
                     echo "<h3>Body Mass Index</h3>
                     <section class='row'>
@@ -454,8 +482,9 @@ $items = array (
                         . number_format($bmi, 2) .
                         ", which is " . returnBMItype($bmi) . ". " . getBMIPercent($bmi, $bmi_data) ."% of
                         Canadians are also " . returnBMItype($bmi) . ". </p>
+                        <h4>Health Tidbit</h4>
                         <blockquote>
-                            " . array_rand(items, 1) . "
+                            " . getQuote() . "
                         </blockquote>
                         </div>
                         <div class='col'>
@@ -472,7 +501,7 @@ $items = array (
                         getSelfHealth($self_rate) .
                         ". This is the same as " . getSelfHealthValue($self_rate, $self_health_data) .
                         "% of the population.</p>
-			<p>Why don't you try " . $task_data[1] . "? We found some places close to you!</p>
+			<h4>Why don't you try " . $task_data[1] . " to keep fit? We found some places close to you!</h4>
                         <iframe width='550' height='300'
                           frameborder='0' style='border:0'
                           src='https://www.google.com/maps/embed/v1/search?key=" . $googlemapskey . "
@@ -507,8 +536,9 @@ $items = array (
                         <div class='col'>
                             <p>You " . getSmokeText($smoking) . ". "
                         . getSmokePercent($smoking, $smoke_data) .
-                    "% of other Canadians also " . getSmokeText($smoking) . "</p>
-                        </div>
+                    "% of other Canadians also " . getSmokeText($smoking) . "</p>"
+                        . smokingInfo($smoking, $smoke_data, $age, $gender, $jsonObject->resourceSets[0]->resources[0]->address->postalCode, $googlemapskey) .
+                        "</div>
                         <div class='col'>
                             <div id='SmokeDonut' style='width:400px; height:350px;'></div>
                         </div>
