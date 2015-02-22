@@ -261,10 +261,14 @@
     }
 
     function get_activity() {
-	$tasks = array(["outdoor+parks", "visiting a park"], ["pools","swimming"], 
-			["skating+rinks", "skating"], ["gyms", "working out"], 
-			["provincial+parks", "camping"], ["soccer+field", "playing soccer"], 
-			["hiking", "hiking"], ["recreation+centre", "joining a community centre"]);
+	$tasks = array(array("outdoor+parks", "visiting a park"), 
+			array("pools","swimming"), 
+			array("skating+rinks", "skating"), 
+			array("gyms", "working out"), 
+			array("provincial+parks", "camping"), 
+			array("soccer+field", "playing soccer"), 
+			array("hiking", "hiking"), 
+			array("recreation+centre", "joining a community centre"));
         $rand_key = array_rand($tasks);
 	return $tasks[$rand_key];
     }
